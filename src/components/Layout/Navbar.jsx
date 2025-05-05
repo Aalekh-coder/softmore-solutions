@@ -6,12 +6,40 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
 
 
     const navItems = ["HOME", "SERVICES", "ABOUT", "OUR PRICING", "BLOG", "CONTACT US"];
+
+    const navLinks=[
+      {
+        to:"/",
+        text:"Home"
+      },
+      {
+        to:"/services",
+        text:"SERVICES"
+      },
+      {
+        to:"/about",
+        text:"ABOUT"
+      },
+      {
+        to:"/pricing",
+        text:"OUR PRICING"
+      },
+      {
+        to:"/blog",
+        text:"BLOG"
+      },
+      {
+        to:"/contact",
+        text:"CONTACT US"
+      },
+    ]
 
     const itemVariants = {
       hidden: { opacity: 0, x: -20 },
@@ -26,7 +54,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="w-full bg-gray-900 h-[10vh] flex items-center justify-between px-5 sticky top-0 z-30">
+    <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
       <div>
         <img
           className="w-[4rem]"
@@ -56,14 +84,16 @@ const Navbar = () => {
       transition={{ staggerChildren: 0.1 }}
       className="flex flex-col gap-4 px-4 py-6"
     >
-      {navItems.map((text, index) => (
+      {navLinks.map((text, index) => (
         <motion.span
           key={index}
           variants={itemVariants}
           whileHover="hover"
           className="cursor-pointer text-lg font-medium text-white"
         >
-          {text}
+          <Link to={text.to}>
+          {text.text}
+          </Link>
         </motion.span>
       ))}
     </motion.div>

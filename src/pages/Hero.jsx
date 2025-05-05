@@ -37,14 +37,14 @@ import computerImg from "../assets/computer.png";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[90vh] flex items-center flex-col lg:flex-row lg:h-[80vh] bg-gradient-to-r from-fuchsia-600 to-indigo-600 overflow-hidden">
+    <div className="w-full h-[90vh] flex items-center flex-col lg:flex-row lg:h-[80vh] bg-gradient-to-r from-fuchsia-600 to-indigo-600 overflow-hidden lg:px-10">
       
       {/* Text Section */}
       <motion.div
-        className="h-full w-full text-white px-4 py-5 lg:py-20 lg:px-6"
+        className="h-full w-full text-white px-4 py-5 lg:py-20 lg:px-10"
         initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
+        whileInView={{ opacity: 1, x: 0 }}
       >
         <p className="font-semibold lg:text-4xl">Premium Web Design Agency</p>
         <motion.p

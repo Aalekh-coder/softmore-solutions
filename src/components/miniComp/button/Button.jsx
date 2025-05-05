@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Button = ({ text }) => {
   return (
     <StyledWrapper>
-      <button>{text ? text : "REQUEST A QUOTE"}</button>
+      <button className="font-poppins">{text ? text : "REQUEST A QUOTE"}</button>
     </StyledWrapper>
   );
 };
