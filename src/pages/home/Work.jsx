@@ -2,12 +2,12 @@ import Button from "@/components/miniComp/button/Button";
 import GeminiBtn from "@/components/miniComp/button/GeminiBtn";
 import PinkBtn from "@/components/miniComp/button/PinkBtn";
 import { easeIn, motion } from "motion/react";
-import project1 from "../../public/project1.png";
-import project2 from "../../public/project2.png";
-import project3 from "../../public/project3.png";
-import project4 from "../../public/project4.png";
-import project5 from "../../public/projects5.png";
-import project6 from "../../public/project6.png";
+import project1 from "../../../public/project1.png";
+import project2 from "../../../public/project2.png";
+import project3 from "../../../public/project3.png";
+import project4 from "../../../public/project4.png";
+import project5 from "../../../public/projects5.png";
+import project6 from "../../../public/project6.png";
 
 import React from "react";
 
@@ -147,7 +147,7 @@ const Work = () => {
                 <p className="font-bold text-3xl ">{item?.title}</p>
                 <p className="text-sm">{item?.decription}</p>
                
-               <button className="px-4 py-2 bg-gradient-to-r from-fuchsia-600 to-indigo-600 rounded-lg my-2">
+               <button className="px-4 py-2 bg-gradient-to-r from-fuchsia-600 to-indigo-600 rounded-lg my-2 mb-5">
                 Visit
                </button>
 

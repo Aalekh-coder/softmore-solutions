@@ -10,10 +10,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
-
-
-    const navItems = ["HOME", "SERVICES", "ABOUT", "OUR PRICING", "BLOG", "CONTACT US"];
-
     const navLinks=[
       {
         to:"/",

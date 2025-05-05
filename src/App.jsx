@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "./pages/Hero";
+import Hero from "./pages/home/Hero";
 import Navbar from "./components/Layout/Navbar";
-import Work from "./pages/Work";
+import Work from "./pages/home/Work";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Services from "./pages/Services";

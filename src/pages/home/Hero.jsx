@@ -1,39 +1,7 @@
-// import Button from "@/components/miniComp/button/Button";
-// import computerImg from "../assets/computer.png";
-// import React from "react";
-
-// const Hero = () => {
-//   return (
-//     <div className="w-full h-[90vh] flex items-center flex-col lg:flex-row lg:h-[80vh] bg-gradient-to-r from-fuchsia-600 to-indigo-600">
-//       <div className="h-full w-full text-white px-4 py-5 lg:py-20 lg:px-6">
-//         <p className="font-semibold lg:text-4xl">Premium Web Design Agency</p>
-//         <p className="font-extrabold text-4xl mt-6 md:text-5xl md:mt-9 lg:text-8xl">
-//           We Grow Brands Online
-//         </p>
-//         <p className="text-sm lg:text-xl">
-//           Custom Websites, Branding & Digital Marketing
-//         </p>
-
-//         <div className="mt-4 md:mt-10 lg:mt-14">
-//           <Button />
-//         </div>
-//       </div>
-
-//       <div className="">
-//         <img src={computerImg} className="" />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Hero;
-
-
-
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/miniComp/button/Button";
-import computerImg from "../assets/computer.png";
+import computerImg from "../../assets/computer.png";
 
 const Hero = () => {
   return (
