@@ -5,6 +5,7 @@ import Work from "./home/Work";
 import Footer from "@/components/Layout/Footer";
 import Summery from "@/pages/home/Summery";
 import WebAbout from "./home/WebAbout";
+import WebProcess from "./home/WebProcess";
 
 const Home = () => {
   return (
@@ -12,8 +13,9 @@ const Home = () => {
       <Hero />
       <Summery />
       <WebAbout />
-        <Work /> 
-      <Footer /> 
+      <WebProcess />
+      <Work />
+      <Footer />
     </div>
   );
 };

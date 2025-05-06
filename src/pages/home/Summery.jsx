@@ -42,7 +42,6 @@ const Summery = () => {
         />
 
         <motion.p
-          style={{ fontFamily: "'Oswald', sans-serif" }}
           initial={{ opacity: 0, x: 200 }}
           transition={{ duration: 0.8 }}
           whileInView={{ opacity: 1, x: 0 }}

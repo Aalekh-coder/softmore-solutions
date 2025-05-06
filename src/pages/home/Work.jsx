@@ -127,7 +127,7 @@ const Work = () => {
               key={index}
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="w-full h-[50vh] mt-14 flex flex-col lg:flex-row gap-5 lg:items-center md:gap-14 border-b-2 my-3"
+              className="w-full mt-5 flex flex-col lg:flex-row gap-5 lg:items-center md:gap-14 border-b-2 my-3"
             >
               <motion.div
                 whileHover={{

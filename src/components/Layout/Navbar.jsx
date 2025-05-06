@@ -51,13 +51,13 @@ const Navbar = () => {
 
   return (
     <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
-      <div>
+      <Link to="/">
         <img
           className="w-[4rem]"
           src="https://softmoreit.co.in/img/logo.png"
           alt="logo"
         />
-      </div>
+      </Link>
 
       <div className="flex items-center gap-8">
         <div>
