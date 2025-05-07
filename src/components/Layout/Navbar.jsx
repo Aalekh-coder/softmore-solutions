@@ -1,53 +1,48 @@
-import { AlignRight } from "lucide-react";
+import { AlignRight, Facebook, House, Instagram, Linkedin } from "lucide-react";
 import React from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const navLinks = [
+    {
+      to: "/",
+      text: "Home",
+    },
+    {
+      to: "/services",
+      text: "SERVICES",
+    },
+    {
+      to: "/about",
+      text: "ABOUT",
+    },
+    {
+      to: "/pricing",
+      text: "OUR PRICING",
+    },
+    {
+      to: "/blog",
+      text: "BLOG",
+    },
+    {
+      to: "/contact",
+      text: "CONTACT US",
+    },
+  ];
 
-    const navLinks=[
-      {
-        to:"/",
-        text:"Home"
-      },
-      {
-        to:"/services",
-        text:"SERVICES"
-      },
-      {
-        to:"/about",
-        text:"ABOUT"
-      },
-      {
-        to:"/pricing",
-        text:"OUR PRICING"
-      },
-      {
-        to:"/blog",
-        text:"BLOG"
-      },
-      {
-        to:"/contact",
-        text:"CONTACT US"
-      },
-    ]
+  const social=[<Instagram size={40}/>,<Facebook size={40}/>,<Linkedin size={40}/>]
 
-    const itemVariants = {
-      hidden: { opacity: 0, x: -20 },
-      visible: { opacity: 1, x: 0 },
-      hover: {
-        scale: 1.05,
-        color: "#fff", // Tailwind indigo-500
-        transition: { type: "spring", stiffness: 300 }
-      }
-    };
-
-
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0 },
+    hover: {
+      scale: 1.05,
+      color: "#fff", // Tailwind indigo-500
+      transition: { type: "spring", stiffness: 300 },
+    },
+  };
 
   return (
     <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
@@ -73,26 +68,32 @@ const Navbar = () => {
               <span className="text-white text-xl">Menu</span>
             </div>
           </SheetTrigger>
-          <SheetContent className="bg-gradient-to-r from-violet-600 to-indigo-600">
-          <motion.div
-      initial="hidden"
-      animate="visible"
-      transition={{ staggerChildren: 0.1 }}
-      className="flex flex-col gap-4 px-4 py-6"
-    >
-      {navLinks.map((text, index) => (
-        <motion.span
-          key={index}
-          variants={itemVariants}
-          whileHover="hover"
-          className="cursor-pointer text-lg font-medium text-white"
-        >
-          <Link to={text.to}>
-          {text.text}
-          </Link>
-        </motion.span>
-      ))}
-    </motion.div>
+          <SheetContent className="px-4 bg-white md:px-10">
+            <div>
+              
+            </div>
+            <div className="lg:mt-20 mt-5">
+              <Link to="/"><House size="40" className="text-[#b13bff] lg:w-20 lg:h-20"/></Link>
+            </div>
+
+            <div className="mt-10">
+              {navLinks.map((item, index) => {
+                return (
+                  <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                    <Link to={item?.to}>{item?.text}</Link>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="flex mt-8 items-center gap-10 opacity-50 md:mt-16">
+              {
+                social?.map((item,index)=>{
+                  return <div className="">
+                    {item}
+                  </div>
+                })
+              }
+            </div>
           </SheetContent>
         </Sheet>
       </div>
@@ -101,3 +102,23 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+  /* <motion.div
+              initial="hidden"
+              animate="visible"
+              transition={{ staggerChildren: 0.1 }}
+              className="flex flex-col gap-4 px-4 py-6"
+            >
+              {navLinks.map((text, index) => (
+                <motion.span
+                  key={index}
+                  variants={itemVariants}
+                  whileHover="hover"
+                  className="cursor-pointer text-lg font-medium text-white"
+                >
+                  <Link to={text.to}>{text.text}</Link>
+                </motion.span>
+              ))}
+            </motion.div> */
+}
