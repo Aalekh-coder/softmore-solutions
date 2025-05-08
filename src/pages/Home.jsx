@@ -22,7 +22,6 @@ const Home = () => {
       <WebAbout />
       <Work />
       <WebProcess />
-      <Footer />
     </div>
   );
 };
