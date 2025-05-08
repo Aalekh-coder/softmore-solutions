@@ -18,7 +18,7 @@ const Contact = () => {
             You'll Love the Result
           </p>
 
-          <div className="bg-gradient-to-r from-fuchsia-600 to-indigo-600 h-[6px] rounded-lg my-8 w-full "></div>
+          <div className="bg-gradient-to-r from-fuchsia-600 to-indigo-600 h-[6px] rounded-lg my-8 w-full " />
           <p className="text-gray-600 lg:text-xl">
             We’re 100% Indian – no outsourcing to teams you’ve never met. At
             Softmore IT Solutions, we believe you deserve a website built with
@@ -128,16 +128,35 @@ const Contact = () => {
             Visit Our Office
           </h2>
           <div className="bg-gradient-to-r from-fuchsia-600 to-indigo-600 h-[6px] rounded-lg my-4 w-full"></div>
-          <div className="rounded-lg overflow-hidden shadow-lg lg:flex lg:items-center lg:gap-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14012.123456789!2d77.123456!3d28.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1234567890!2sA1B%2F8%2C%20Janakpuri%2C%20New%20Delhi%2C%20India%20110058!5e0!3m2!1sen!2sin!4v1681234567890!5m2!1sen!2sin"
-              className="w-[80vw] h-[50vh] lg:w-[50vw]"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <div className="font-bold lg:text-3xl lg:px-10">A1B/8, Janakpuri, New Delhi, India 110058</div>
+
+          {/* map main dev  */}
+
+          <div className="flex flex-col lg:flex-row lg:gap-5 lg:items-end">
+            <div>
+              <div className="rounded-lg overflow-hidden shadow-lg lg:flex lg:items-center lg:gap-5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14012.123456789!2d77.123456!3d28.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1234567890!2sA1B%2F8%2C%20Janakpuri%2C%20New%20Delhi%2C%20India%20110058!5e0!3m2!1sen!2sin!4v1681234567890!5m2!1sen!2sin"
+                  className="w-[80vw] h-[50vh] lg:w-[40vw]"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div className="font-bold lg:text-3xl lg:px-10"></div>
+              </div>
+            </div>
+            <div>
+              <Card>
+                <div className="flex items-start py-5 px-2 md:px-5 md:text-2xl">
+                  <div className="font-bold px-2">Address:</div>
+                  <div>A1B/8, Janakpuri, New Delhi, India 110058</div>
+                </div>
+                <div className="flex items-start py-5 px-2 md:px-5 md:text-2xl">
+                  <div className="font-bold ">Phone No:</div>
+                  <div> +91 9266474766</div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

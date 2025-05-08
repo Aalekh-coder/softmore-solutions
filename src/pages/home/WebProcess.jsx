@@ -95,7 +95,6 @@
 //     };
 //   }, []);
 
-
 //   return (
 //     <div className="w-full">
 //       <h1 className="font-bold text-3xl px-3 md:px-16 md:text-4xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent mt-10 lg:px-5 lg:text-5xl lg:mb-10 lg:text-center ">
@@ -106,7 +105,7 @@
 //         We craft tailored websites for brands of all sizes, delivering impactful
 //         and measurable outcomes.
 //       </p>
-//       <div 
+//       <div
 //       ref={scrollContainerRef}
 //       // className="w-full overflow-x-scroll flex items-start"
 //       className="w-full overflow-x-scroll grid grid-flow-col "
@@ -159,12 +158,12 @@
 //   );
 // };
 
-
 import { CircleArrowRight } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 const WebProcess = () => {
-   const processCardItems = [
+  const processCardItems = [
     {
       img: "https://media.istockphoto.com/id/1222811180/photo/digital-marketing.jpg?s=612x612&w=0&k=20&c=qBv1W2rZZedjBna94aR5GDEgsEcmHrRpoqLvb727Weo=",
       title: "Web Strategy",
@@ -241,8 +240,14 @@ const WebProcess = () => {
     },
   ];
 
+  // huxn code
+  const targetRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({ target: targetRef });
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+
   return (
-    <div className="w-full">
+    <div className="w-full" ref={targetRef}>
       <h1 className="font-bold text-3xl px-3 md:px-16 md:text-4xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent mt-10 lg:px-5 lg:text-5xl lg:mb-10 lg:text-center">
         Our Approach to Getting Things Done
       </h1>
@@ -251,9 +256,7 @@ const WebProcess = () => {
         We craft tailored websites for brands of all sizes, delivering impactful
         and measurable outcomes.
       </p>
-      <div
-        className="w-full overflow-x-scroll grid grid-flow-col"
-      >
+      <div  style={{x}} className="w-full overflow-x-scroll grid grid-flow-col">
         {processCardItems?.map((item, index) => (
           <ProcessCard
             key={index}
