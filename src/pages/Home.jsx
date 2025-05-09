@@ -6,13 +6,7 @@ import Footer from "@/components/Layout/Footer";
 import Summery from "@/pages/home/Summery";
 import WebAbout from "./home/WebAbout";
 import WebProcess from "./home/WebProcess";
-
-
-
-
-
-
-
+import ClientReview from "./home/ClientReview";
 
 const Home = () => {
   return (
@@ -22,6 +16,7 @@ const Home = () => {
       <WebAbout />
       <Work />
       <WebProcess />
+      <ClientReview />
     </div>
   );
 };

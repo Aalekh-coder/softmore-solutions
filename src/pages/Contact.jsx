@@ -3,6 +3,7 @@ import team from "../assets/contactus/teams.jpg";
 import { Card } from "@/components/ui/card";
 import teamMeeting from "@/assets/contactus/teamMeeting.jpg";
 import { ArrowRight, PhoneCall } from "lucide-react";
+import { motion } from "motion/react";
 
 const Contact = () => {
   return (
@@ -10,7 +11,17 @@ const Contact = () => {
       {/* first section  */}
       <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:mt-24">
         {/* text  */}
-        <div className="px-7 py-5 lg:w-1/2 lg:px-14">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+          className="px-7 py-5 lg:w-1/2 lg:px-14"
+        >
           <h1 className="text-center font-bold text-4xl text-purple-950 lg:text-7xl lg:text-left">
             Contact Us
           </h1>
@@ -24,17 +35,37 @@ const Contact = () => {
             Softmore IT Solutions, we believe you deserve a website built with
             Indian expertise, quality, and standards.
           </p>
-        </div>
+        </motion.div>
 
         {/* for image  */}
-        <div className="relative right-8 lg:w-1/2">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+          className="relative right-8 lg:w-1/2"
+        >
           <img src={team} className="rounded-r-full right-5" />
-        </div>
+        </motion.div>
       </div>
 
       {/* second section  */}
       <div className="lg:flex lg:w-full lg:px-20 mt-8">
-        <div className="px-5 mt-14 lg:w-[60vw]">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+          className="px-5 mt-14 lg:w-[60vw]"
+        >
           <h2 className="text-center text-4xl font-bold text-purple-950">
             Get in Touch With Our Team!
           </h2>
@@ -96,9 +127,22 @@ const Contact = () => {
               </div>
             </div>
           </form>
-        </div>
+        </motion.div>
 
-        <div className="px-5 py-5 lg:w-1/3">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          whileHover={{
+            scale: 1.22,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+          className="px-5 py-5 lg:w-1/3"
+        >
           <Card className="overflow-hidden rounded-3xl">
             <img src={teamMeeting} className="" />
             <p className="px-7 text-3xl font-bold mt-7">Take The Next Step</p>
@@ -110,12 +154,23 @@ const Contact = () => {
               Get in Touch <ArrowRight />
             </Button>
           </Card>
-        </div>
+        </motion.div>
       </div>
 
       {/* last section  */}
 
-      <div className="mx-7 text-center lg:my-20">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+     
+        transition={{
+          duration: 0.6,
+        }}
+        className="mx-7 text-center lg:my-20"
+      >
         <p className="text-4xl font-bold my-8 md:text-5xl">Give Us A Call</p>
         <div className="">
           <Button className="bg-gradient-to-r from-fuchsia-600 to-indigo-600 rounded-xl px-10 py-5 text-lg md:px-14 md:py-6">
@@ -159,7 +214,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
