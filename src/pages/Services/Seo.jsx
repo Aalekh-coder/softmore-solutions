@@ -237,7 +237,7 @@ const Seo = () => {
           success.
         </p>
 
-        <div className="md:flex md:items-start lg:px-20">
+        <div className="md:flex md:flex-row-reverse md:items-start lg:px-20">
           <div className="md:w-1/2 mt-5">
             {seoServiceCard2?.map((item, index) => {
               return (

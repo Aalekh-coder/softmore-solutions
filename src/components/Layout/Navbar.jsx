@@ -122,7 +122,7 @@ const Navbar = () => {
                       SERVICE
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col my-4">
-                      <Link className="md:text-xl text-sm my-3 ml font-medium text-blue-500 flex items-center gap-2 mb-2">
+                      <Link to="/services/ads" className="md:text-xl text-sm my-3 ml font-medium text-blue-500 flex items-center gap-2 mb-2">
                         <Megaphone />
                         Ads Service
                       </Link>

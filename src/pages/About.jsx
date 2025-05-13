@@ -1,7 +1,6 @@
-import boardwhitegirl from "@/assets/about/boardwhitegirl.jpg";
 import menChair from "@/assets/about/menChair.jpg";
 import officeMeet from "@/assets/about/officeMeet.jpg";
-import { Card } from "@/components/ui/card";
+
 import {
   Anvil,
   AppWindow,
@@ -156,7 +155,7 @@ const About = () => {
   ];
 
   return (
-    <div className="px-5 py-5">
+    <div className="px-5 py-5 overflow-hidden">
       <motion.h1 initial={{
         opacity:0,
         x:50
@@ -189,7 +188,7 @@ const About = () => {
           }}
           >
 
-            <img src={boardwhitegirl} className="rounded-lg" />
+            <img src="../about/boardwhitegirl.jpg" className="rounded-lg" />
           </motion.div>
           <motion.div 
           initial={{
@@ -217,10 +216,10 @@ const About = () => {
           transition={{
             duration:0.5
           }}>
-              <img src={menChair} className="rounded-lg" />
+              <img src="../about/menChair.jpg" className="rounded-lg" />
             </motion.div>
             <div>
-              <img src={officeMeet} className="rounded-lg" />
+              <img src="../about/officeMeet.jpg" className="rounded-lg" />
             </div>
           </motion.div>
         </div>
