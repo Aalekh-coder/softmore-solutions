@@ -7,6 +7,7 @@ import Summery from "@/pages/home/Summery";
 import WebAbout from "./home/WebAbout";
 import WebProcess from "./home/WebProcess";
 import ClientReview from "./home/ClientReview";
+import Chat from "./home/Chat";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Work />
       <WebProcess />
       <ClientReview />
+      {/* <Chat /> */}
     </div>
   );
 };

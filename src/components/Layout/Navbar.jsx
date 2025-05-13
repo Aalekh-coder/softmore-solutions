@@ -1,8 +1,26 @@
-import { AlignRight, Facebook, House, Instagram, Linkedin } from "lucide-react";
+import {
+  AlignRight,
+  AppWindow,
+  AtSign,
+  BookUser,
+  Earth,
+  Facebook,
+  Flame,
+  House,
+  Instagram,
+  Linkedin,
+  Megaphone,
+} from "lucide-react";
 import React from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Navbar = () => {
   const navLinks = [
@@ -32,7 +50,11 @@ const Navbar = () => {
     },
   ];
 
-  const social=[<Instagram size={40}/>,<Facebook size={40}/>,<Linkedin size={40}/>]
+  const social = [
+    <Instagram size={40} />,
+    <Facebook size={40} />,
+    <Linkedin size={40} />,
+  ];
 
   const itemVariants = {
     hidden: { opacity: 0, x: -20 },
@@ -69,14 +91,14 @@ const Navbar = () => {
             </div>
           </SheetTrigger>
           <SheetContent className="px-4 bg-white md:px-10">
-            <div>
-              
-            </div>
+            <div></div>
             <div className="lg:mt-20 mt-5">
-              <Link to="/"><House size="40" className="text-[#b13bff] lg:w-20 lg:h-20"/></Link>
+              <Link to="/">
+                <House size="40" className="text-[#b13bff] lg:w-20 lg:h-20" />
+              </Link>
             </div>
 
-            <div className="mt-10">
+            {/* <div className="mt-10">
               {navLinks.map((item, index) => {
                 return (
                   <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
@@ -84,15 +106,63 @@ const Navbar = () => {
                   </div>
                 );
               })}
+            </div> */}
+
+            <div className="mt-10">
+              <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Link to="/">HOME</Link>
+              </div>
+
+              {/* dropdown  */}
+
+              <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Accordion type="single" collapsible className="w-full ">
+                  <AccordionItem value="item-1" className="py-0 border-none">
+                    <AccordionTrigger className=" font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl p-0 m-0">
+                      SERVICE
+                    </AccordionTrigger>
+                    <AccordionContent className="flex flex-col my-4">
+                      <Link className="md:text-xl text-sm my-3 ml font-medium text-blue-500 flex items-center gap-2 mb-2">
+                        <Megaphone />
+                        Ads Service
+                      </Link>
+
+                      <Link to="/services/seo" className="md:text-xl my-3 ml font-medium text-rose-500 flex items-center gap-2 mb-2">
+                        <Flame />
+                        Search Engine Optimization
+                      </Link>
+
+                      <Link className="md:text-xl my-3 ml font-medium text-pink-500 flex items-center gap-2 mb-2">
+                        <AtSign />
+                        Social Media Management
+                      </Link>
+
+                      <Link to="/services/web-design" className="md:text-xl my-3 ml font-medium text-cyan-500 flex items-center gap-2 mb-2">
+                        <AppWindow />
+                        Website Design
+                      </Link>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+
+              <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Link to="/about">ABOUT</Link>
+              </div>
+              <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Link to="/pricing">OUR PRICING</Link>
+              </div>
+              <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Link to="/blog">BLOG</Link>
+              </div>
+              <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Link to="/contact">CONTACT US</Link>
+              </div>
             </div>
             <div className="flex mt-8 items-center gap-10 opacity-50 md:mt-16">
-              {
-                social?.map((item,index)=>{
-                  return <div className="">
-                    {item}
-                  </div>
-                })
-              }
+              {social?.map((item, index) => {
+                return <div className="" key={index}>{item}</div>;
+              })}
             </div>
           </SheetContent>
         </Sheet>
