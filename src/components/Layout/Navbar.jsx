@@ -132,7 +132,7 @@ const Navbar = () => {
                         Search Engine Optimization
                       </Link>
 
-                      <Link className="md:text-xl my-3 ml font-medium text-pink-500 flex items-center gap-2 mb-2">
+                      <Link to="/services/social-media-management" className="md:text-xl my-3 ml font-medium text-pink-500 flex items-center gap-2 mb-2">
                         <AtSign />
                         Social Media Management
                       </Link>

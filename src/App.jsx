@@ -11,7 +11,7 @@ import Blog from "./pages/Blog";
 import Footer from "./components/Layout/Footer";
 import WebSiteDesign from "./pages/Services/WebSite";
 import Seo from "./pages/Services/Seo";
-import SocialMediaOptimize from "./pages/Services/SocialMediaOptimize";
+import SocialMediaOptimize from "./pages/Services/SocialMediaManagemnt";
 import SocialMedia from "./pages/Services/AdsService";
 import AdService from "./pages/Services/AdsService";
 
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services/web-design" element={<WebSiteDesign />} />
         <Route path="/services/seo" element={<Seo />} />
-        <Route path="/services/social-media-optimize" element={<SocialMediaOptimize />} />
+        <Route path="/services/social-media-management" element={<SocialMediaOptimize />} />
         <Route path="/services/ads" element={<AdService />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
