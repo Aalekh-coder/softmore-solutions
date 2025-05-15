@@ -6,7 +6,6 @@ import computerImg from "../../assets/computer.png";
 const Hero = () => {
   return (
     <div className="w-full h-[90vh] flex items-center flex-col lg:flex-row lg:h-[80vh] bg-gradient-to-r from-fuchsia-600 to-indigo-600 overflow-hidden lg:px-10">
-      
       {/* Text Section */}
       <motion.div
         className="h-full w-full text-white px-4 py-5 lg:py-20 lg:px-10"
@@ -16,15 +15,15 @@ const Hero = () => {
       >
         <p className="font-semibold lg:text-4xl">Premium Web Design Agency</p>
         <motion.p
-          className="font-extrabold text-4xl mt-6 md:text-5xl md:mt-9 lg:text-8xl"
+          className="font-extrabold text-4xl mt-6 md:text-5xl md:mt-9 lg:text-7xl"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          We Grow Brands Online
+          We Don’t Just Build Websites—We Build Sales Machines
         </motion.p>
         <p className="text-sm lg:text-xl mt-2">
-          Custom Websites, Branding & Digital Marketing
+        We design high-performance sites proven to increase leads by 200%.
         </p>
 
         <motion.div
@@ -43,7 +42,11 @@ const Hero = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <img src={computerImg} className="max-w-[400px] lg:max-w-[500px]" alt="Computer" />
+        <img
+          src={computerImg}
+          className="max-w-[400px] lg:max-w-[500px]"
+          alt="Computer"
+        />
       </motion.div>
     </div>
   );

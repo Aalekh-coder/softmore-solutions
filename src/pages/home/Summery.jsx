@@ -1,4 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import React, { useEffect } from "react";
 
 const Summery = () => {
@@ -18,21 +19,20 @@ const Summery = () => {
   return (
     <div
       className="w-full px-4 overflow-hidden mt-10 pt-5"
-      style={{ fontFamily: "'Cal Sans', sans-serif" }}
+      // style={{ fontFamily: "'Cal Sans', sans-serif" }}
     >
       <motion.h2
-        className="text-sm md:text-xl lg:text-3xl px-5 text-center bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent font-bold mb-5"
-        
+        className="text-sm md:text-xl lg:text-3xl px-5 text-center bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent mb-5 font-bold"
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
           duration: 0.2,
         }}
       >
-        Creative Web Agency Delivering Custom Solutions
+        Design with Purpose, Code with Precision, Deliver with Pride
       </motion.h2>
 
-      <div className="lg:flex lg:items-center lg:gap-4 lg:mt-3 lg:px-12">
+      <div className="lg:flex lg:items-start lg:gap-4 lg:mt-3 lg:px-12">
         <motion.img
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.8 }}
@@ -45,30 +45,23 @@ const Summery = () => {
           initial={{ opacity: 0, x: 200 }}
           transition={{ duration: 0.8 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="lg:w-1/2 lg:text-lg lg:px-5"
+          className="lg:w-1/2 lg:text-lg lg:px-5 mt-5"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quis
-          aut iste hic! Voluptatem mollitia perferendis iusto similique hic,
-          quisquam porro exercitationem sapiente cupiditate eos accusamus,
-          excepturi, magnam quasi esse aliquam laborum temporibus minus odit
-          unde deleniti. Rem quas hic laborum pariatur nihil, corrupti earum
-          obcaecati quasi nam similique voluptatum molestias amet iusto a!
-          Aliquam illum cum possimus molestiae, sunt corporis beatae omnis
-          temporibus eos, voluptates quis ipsum dolor reiciendis voluptas
-          nostrum dicta sit sint, maxime quasi assumenda iusto alias repellat
-          fuga mollitia. Obcaecati, voluptate dolore! Eum modi maxime molestias
-          earum ullam, ipsa at nostrum reiciendis totam. Illum, mollitia nam.
+          Since 2019, <span className="text-blue-500 font-semibold">SOFTMORE IT Solutions Pvt Ltd</span> has been redefining digital excellence for ambitious businesses worldwide. We don’t just build websites or run campaigns—we engineer measurable growth through:
+
+          <ul className="mt-5">
+            <li className=""><div className="font-semibold">Websites That Convert </div>High-performance designs blending aesthetics with revenue-driving functionality</li>
+            <li className=""><div className="font-semibold">Digital Marketing That Delivers </div>Data-powered strategies to dominate search rankings and social platforms</li>
+            <li className=""><div className="font-semibold">Brand Identities That Inspire</div>Distinctive visual storytelling to make your mark unforgettable</li>
+          </ul>
+          <p className="mt-3"> Born in the digital age, we fuse emerging technologies with battle-tested strategies to future-proof your business. Whether you’re scaling startups or enterprise leaders, our tailored solutions turn your vision into competitive advantage</p>
         </motion.p>
       </div>
-
-
-  
     </div>
   );
 };
 
 export default Summery;
-
 
 <motion.p
   className="font-extrabold text-4xl mt-6 md:text-5xl md:mt-9 lg:text-8xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent"
@@ -76,5 +69,5 @@ export default Summery;
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.3, duration: 0.8 }}
 >
-  We Grow Brands Online
-</motion.p>
+  We Don’t Just Build Websites—We Build Sales Machines
+</motion.p>;

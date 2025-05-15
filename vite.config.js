@@ -10,4 +10,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+   build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'], // Example: Split React into a separate chunk
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000, // Adjust the warning limit (optional)
+  },
 })
