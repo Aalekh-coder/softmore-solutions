@@ -18,7 +18,7 @@ const Summery = () => {
 
   return (
     <div
-      className="w-full px-4 overflow-hidden mt-10 pt-5"
+      className="w-full px-4 overflow-hidden mt-10 pt-5 lg:mt-10 lg:border-b lg:pb-10"
       // style={{ fontFamily: "'Cal Sans', sans-serif" }}
     >
       <motion.h2
@@ -54,7 +54,7 @@ const Summery = () => {
             <li className=""><div className="font-semibold">Digital Marketing That Delivers </div>Data-powered strategies to dominate search rankings and social platforms</li>
             <li className=""><div className="font-semibold">Brand Identities That Inspire</div>Distinctive visual storytelling to make your mark unforgettable</li>
           </ul>
-          <p className="mt-3"> Born in the digital age, we fuse emerging technologies with battle-tested strategies to future-proof your business. Whether you’re scaling startups or enterprise leaders, our tailored solutions turn your vision into competitive advantage</p>
+          {/* <p className="mt-3"> Born in the digital age, we fuse emerging technologies with battle-tested strategies to future-proof your business. Whether you’re scaling startups or enterprise leaders, our tailored solutions turn your vision into competitive advantage</p> */}
         </motion.p>
       </div>
     </div>

@@ -54,7 +54,7 @@ const ClientReview = () => {
   ];
 
   return (
-    <div className="my-10">
+    <div className="my-10 overflow-hidden">
       <div>
         <h2 className="bg-gradient-to-r from-fuchsia-600 to-indigo-600  text-transparent bg-clip-text w-full block text-center text-3xl font-bold md:text-4xl lg:text-5xl">
           Client reviews

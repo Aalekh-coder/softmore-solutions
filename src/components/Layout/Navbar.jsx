@@ -11,7 +11,7 @@ import {
   Linkedin,
   Megaphone,
 } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
@@ -23,6 +23,8 @@ import {
 } from "@/components/ui/accordion";
 
 const Navbar = () => {
+
+const [isOpen, setIsOpen] = useState(false)
   const navLinks = [
     {
       to: "/",
@@ -66,6 +68,9 @@ const Navbar = () => {
     },
   };
 
+
+
+
   return (
     <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
       <Link to="/">
@@ -83,8 +88,8 @@ const Navbar = () => {
           </button>
         </div>
 
-        <Sheet>
-          <SheetTrigger>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <SheetTrigger >
             <div className="flex items-center gap-2 ">
               <AlignRight color="white" className="" size={30} />
               <span className="text-white text-xl">Menu</span>
@@ -93,7 +98,7 @@ const Navbar = () => {
           <SheetContent className="px-4 bg-white md:px-10">
             <div></div>
             <div className="lg:mt-20 mt-5">
-              <Link to="/">
+              <Link to="/" onClick={() => setIsOpen(false)}>
                 <House size="40" className="text-[#b13bff] lg:w-20 lg:h-20" />
               </Link>
             </div>
@@ -110,7 +115,7 @@ const Navbar = () => {
 
             <div className="mt-10">
               <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                <Link to="/">HOME</Link>
+                <Link to="/" onClick={() => setIsOpen(false)}>HOME</Link>
               </div>
 
               {/* dropdown  */}
@@ -122,22 +127,22 @@ const Navbar = () => {
                       SERVICE
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col my-4">
-                      <Link to="/services/ads" className="md:text-xl text-sm my-3 ml font-medium text-blue-500 flex items-center gap-2 mb-2">
+                      <Link onClick={() => setIsOpen(false)} to="/services/ads" className="md:text-xl text-sm my-3 ml font-medium text-blue-500 flex items-center gap-2 mb-2">
                         <Megaphone />
                         Ads Service
                       </Link>
 
-                      <Link to="/services/seo" className="md:text-xl my-3 ml font-medium text-rose-500 flex items-center gap-2 mb-2">
+                      <Link onClick={() => setIsOpen(false)} to="/services/seo" className="md:text-xl my-3 ml font-medium text-rose-500 flex items-center gap-2 mb-2">
                         <Flame />
                         Search Engine Optimization
                       </Link>
 
-                      <Link to="/services/social-media-management" className="md:text-xl my-3 ml font-medium text-pink-500 flex items-center gap-2 mb-2">
+                      <Link onClick={() => setIsOpen(false)} to="/services/social-media-management" className="md:text-xl my-3 ml font-medium text-pink-500 flex items-center gap-2 mb-2">
                         <AtSign />
                         Social Media Management
                       </Link>
 
-                      <Link to="/services/web-design" className="md:text-xl my-3 ml font-medium text-cyan-500 flex items-center gap-2 mb-2">
+                      <Link onClick={() => setIsOpen(false)} to="/services/web-design" className="md:text-xl my-3 ml font-medium text-cyan-500 flex items-center gap-2 mb-2">
                         <AppWindow />
                         Website Design
                       </Link>
@@ -147,16 +152,16 @@ const Navbar = () => {
               </div>
 
               <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                <Link to="/about">ABOUT</Link>
+                <Link to="/about" onClick={() => setIsOpen(false)}>ABOUT</Link>
               </div>
               <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                <Link to="/pricing">OUR PRICING</Link>
+                <Link to="/pricing" onClick={() => setIsOpen(false)}>OUR PRICING</Link>
               </div>
               <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                <Link to="/blog">BLOG</Link>
+                <Link to="/blog" onClick={() => setIsOpen(false)}>BLOG</Link>
               </div>
               <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                <Link to="/contact">CONTACT US</Link>
+                <Link to="/contact" onClick={() => setIsOpen(false)}>CONTACT US</Link>
               </div>
             </div>
             <div className="flex mt-8 items-center gap-10 opacity-50 md:mt-16">

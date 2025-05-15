@@ -1,9 +1,11 @@
 import { PhoneOutgoing } from 'lucide-react'
+import {motion, scale} from "motion"
+
 const Chat = () => {
   return (
-    <div className="fixed bottom-20 right-14 bg-blue-600 px-5 py-5 rounded-full">
+    <motion.div  className="z-50 fixed bottom-7 right-7 bg-blue-600 px-5 py-5 rounded-full">
         <PhoneOutgoing color="white"/>
-    </div>
+    </motion.div>
   )
 }
 

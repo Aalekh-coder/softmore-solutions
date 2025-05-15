@@ -73,7 +73,7 @@ const Work = () => {
         }}
         className="text-4xl hover:underline bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent font-bold"
       >
-        Our work
+       Portfolio Showcase
       </motion.h1>
       <div className="md:flex md:gap-3">
         <motion.p
@@ -90,11 +90,9 @@ const Work = () => {
           }}
           className="mt-5 mb-5 md:w-[50vw] lg:w-[30vw]"
         >
-          Digital Silk is a web design company &{" "}
-          <span className="text-blue-950 ">digital marketing</span> agency
-          focused on growing brands online. We create effective brand
-          strategies, custom web design, development, and digital marketing
-          solutions to generate greater brand engagement and conversions.
+Where Ideas Become Digital Success Stories
+
+        
         </motion.p>
 
         <motion.p
@@ -111,9 +109,7 @@ const Work = () => {
           }}
           className="md:w-[50vw] md:mt-14 lg:w-[20vw] mb-5 "
         >
-          We work closely with our clients to ensure each project meets their
-          brand guidelines and business goals and provide technical and
-          marketing expertise to ensure optimal results.
+          At <span className="font-semibold">Softmore</span>, we transform visions into high-performing digital assets. Explore our work and see how we've helped brands elevate their online presence through strategic design and marketing solutions.
         </motion.p>
       </div>
       <GeminiBtn />

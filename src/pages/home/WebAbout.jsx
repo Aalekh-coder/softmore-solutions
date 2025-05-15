@@ -1,9 +1,27 @@
 import {
+  Aperture,
+  BanknoteArrowUp,
+  ChartNoAxesCombined,
+  CircleGauge,
+  Crosshair,
   Earth,
   Feather,
+  Gem,
+  HandCoins,
+  Hash,
+  Instagram,
+  Layers,
   LayoutTemplate,
+  MessageSquareDiff,
   MonitorSmartphone,
+  Radar,
+  Rocket,
+  Shredder,
+  Star,
+  TableOfContents,
   Tangent,
+  TrainFront,
+  Waypoints,
 } from "lucide-react";
 import React from "react";
 
@@ -18,64 +36,234 @@ const WebAbout = () => {
       points: [
         {
           icon: <MonitorSmartphone />,
-          describe: ["Mobile-First Design:"," Perfectly responsive on all devices"],
-          color:"bg-rose-500"
+          describe: [
+            "Mobile-First Design",
+            " Perfectly responsive on all devices",
+          ],
+          color: "bg-rose-500",
         },
         {
           icon: <Feather />,
-          describe:
-            ["Lightning Fast Speed:"," Optimized to load in under 2 seconds"],
-             color:"bg-fuchsia-500"
+          describe: [
+            "Lightning Fast Speed",
+            " Optimized to load in under 2 seconds",
+          ],
+          color: "bg-fuchsia-500",
         },
         {
           icon: <Earth />,
-          describe: ["SEO-Ready Architecture:", " Built to rank from day one"],
+          describe: ["SEO-Ready Architecture", " Built to rank from day one"],
+          color: "bg-pink-500",
         },
         {
           icon: <LayoutTemplate />,
-          describe:
-            ["Conversion-Focused Layouts:"," Strategic placement for maximum leads"],
+          describe: [
+            "Conversion Layouts",
+            " Strategic placement for maximum leads",
+          ],
+          color: "bg-orange-500",
         },
         {
           icon: <Tangent />,
-          describe: ["Easy Content Management:"," Update your site effortlessly"],
+          describe: [
+            "Easy to Management",
+            " Update your site effortlessly",
+          ],
+          color: "bg-green-500",
         },
       ],
     },
     {
       img: "../home/Seo-images.png",
-      title: "Search Engine Optimization",
+      title: "Dominate Search Results with Our SEO Powerhouse",
       describe:
-        "Search Engine Optimization (SEO) is a powerful tool for businesses aiming to enhance their online visibility and attract more customers. By optimizing your website for search engines, you improve its ranking on search engine results pages (SERPs), making it easier for potential customers to find you. SEO drives organic traffic, which is cost-effective and sustainable compared to paid advertising.",
+        "We don't just improve rankings - we put your business in front of ready-to-buy customers. Our proven strategies.",
       textColor: "text-[#AAFF00]",
+      points: [
+        {
+          icon: <Aperture className=""/>,
+          describe: [
+            "Technical SEO",
+            " that makes Google love your site",
+          ],
+          color: "bg-red-500",
+        },
+        {
+          icon: <TableOfContents className=""/>,
+          describe: [
+            "Content",
+            " that answers exactly what your customers search for",
+          ],
+          color: "bg-amber-500",
+        },
+        {
+          icon: <Earth className=""/>,
+          describe: ["Local SEO", " to attract nearby buyers (perfect for stores/services)"],
+          color: "bg-pink-500",
+        },
+        {
+          icon: <LayoutTemplate className=""/>,
+          describe: [
+            "E-commerce SEO",
+            " to boost product visibility and sales",
+          ],
+          color: "bg-emerald-500",
+        },
+        {
+          icon: <Layers className=""/>,
+          describe: [
+            "Regular performance",
+            " reports so you see the growth",
+          ],
+          color: "bg-blue-400",
+        },
+        {
+          icon: <Star className=""/>,
+          describe: [
+            "Keywords",
+            " reports so you see the growth",
+          ],
+          color: "bg-sky-400",
+        },
+      ],
     },
     {
-      img: "https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_52683-81353.jpg?t=st=1746443873~exp=1746447473~hmac=112e7c005fe68a50c16f5172547fcd51389b2e57c29ebe2ca61b78d5d0af9f16&w=996",
-      title: "Website Redesign",
+      img: "../home/socialmediamanagement.webp",
+      title: "Transform Your Social Media Into a Lead-Generating Machine",
       describe:
-        "Whether you need a design refresh or a complete website overhaul, we analyze your site’s pain points and opportunities to revitalize your digital presence. Our award-winning web designers will breathe new life into your website, enhancing its functionality, user experience, and aesthetic appeal. The result? A modern, dynamic site that drives increased traffic and bolsters your industry reputation. ",
+        "Social Media Optimization (SMO) & Management – We don’t just post content—we build communities that drive sales.",
       textColor: "text-[#45C2B4]",
+      points: [
+        {
+          icon: <Instagram className=""/>,
+          describe: [
+            "Platform-Specific Strategies",
+            " Perfectly responsive on all devices",
+          ],
+          color: "bg-rose-500",
+        },
+        {
+          icon: <Rocket className=""/>,
+          describe: [
+            "Engagement-Boosting Posts",
+            " Optimized to load in under 2 seconds",
+          ],
+          color: "bg-fuchsia-500",
+        },
+        {
+          icon: <Hash className=""/>,
+          describe: ["Hashtag & SEO Optimization", " Built to rank from day one"],
+          color: "bg-pink-500",
+        },
+        {
+          icon: <Shredder className=""/>,
+          describe: [
+            "Influencer & Collaboration Outreach",
+            " Strategic placement for maximum leads",
+          ],
+          color: "bg-orange-500",
+        },
+        {
+          icon: <BanknoteArrowUp className=""/>,
+          describe: [
+            "Paid Social Ad Campaigns",
+            " Update your site effortlessly",
+          ],
+          color: "bg-lime-500",
+        },
+        {
+          icon: <ChartNoAxesCombined className=""/>,
+          describe: [
+            "Analytics & Monthly Reports",
+            " Update your site effortlessly",
+          ],
+          color: "bg-indigo-400",
+        },
+      ],
     },
     {
-      img: "https://img.freepik.com/free-vector/linear-flat-ui-ux-landing-page_23-2149059701.jpg?t=st=1746443971~exp=1746447571~hmac=a80f664ac8baa1c9c5b4a95b1ccda88b7c9628d3bc9cfbfdd121f3e3e8013725&w=996",
-      title: "UX/UI Web Design",
+      img: "../home/facebook-ads-masterclass.png",
+      title: "Turn Clicks Into Customers With Our Google Ads Mastery",
       describe:
-        "Our award-winning designers use trusted methods and innovative approaches to create engaging visual experiences and seamless user journeys. Whether you’re looking to build a custom UX/UI or redesign your current one, we’ll enhance your visual identity and ensure your website is both aesthetically pleasing and highly functional",
-      textColor: "text-[#E1C5EB]",
+        "We optimize every dollar to attract ready-to-buy customers",
+      textColor: "text-[#00ff99]",
+      points: [
+        {
+          icon: <Crosshair className=""/>,
+          describe: [
+            "Precision Targeting",
+            " Perfectly responsive on all devices",
+          ],
+          color: "bg-rose-500",
+        },
+        {
+          icon: <Waypoints className=""/>,
+          describe: [
+            "Conversion-Optimized Campaigns",
+            " Optimized to load in under 2 seconds",
+          ],
+          color: "bg-fuchsia-500",
+        },
+        {
+          icon: <HandCoins className=""/>,
+          describe: ["Smart Budget Allocation", " Built to rank from day one"],
+          color: "bg-pink-500",
+        },
+        {
+          icon: <TrainFront className=""/>,
+          describe: [
+            "Transparent Performance Tracking",
+            " Strategic placement for maximum leads",
+          ],
+          color: "bg-orange-500",
+        },
+    
+      ],
     },
     {
-      img: "https://img.freepik.com/free-vector/ecommerce-web-page-concept-illustration_114360-8204.jpg?t=st=1746444058~exp=1746447658~hmac=6bac5ae8bae1a6f2f5b3fd533f6f888285cf33f9a6c72badfebf9590e44e5c12&w=996",
-      title: "eCommerce Design & Development",
+      img: "../home/google.png",
+      title: "Turn Your Google My Business Into a 24/7 Sales Rep",
       describe:
-        "We specialize in design and development for leading content management systems (CMSs) like Shopify, Magento, and WooCommerce. Our experts can help you build and scale your eCommerce website across platforms, ensuring a seamless and robust online shopping experience for your customers.",
+        "We don't just list your business – we make it the top choice for local customers",
       textColor: "text-[#385A64]",
+      points: [
+        {
+          icon: <Gem className=""/>,
+          describe: [
+            "Complete Profile Optimization",
+            " Perfectly responsive on all devices",
+          ],
+          color: "bg-emerald-500",
+        },
+        {
+          icon: <MessageSquareDiff className=""/>,
+          describe: [
+            "Review & Reputation Management",
+            " Optimized to load in under 2 seconds",
+          ],
+          color: "bg-cyan-500",
+        },
+        {
+          icon: <Radar className=""/>,
+          describe: ["Local SEO Dominance", " Built to rank from day one"],
+          color: "bg-pink-500",
+        },
+        {
+          icon: <CircleGauge className=""/>,
+          describe: [
+            "Performance Tracking",
+            " Strategic placement for maximum leads",
+          ],
+          color: "bg-blue-500",
+        }
+      ],
     },
   ];
 
   return (
     <div className="px-3 lg:flex lg:px-14 lg:mt-14 ">
       {/* info tag  */}
-      <div className="lg:w-1/2">
+      <div className="lg:w-[40vw]">
         <p className="font-bold text-3xl bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent mt-10 lg:px-5 lg:text-4xl lg:mb-7">
           Grow Your Business Online with Our Complete Digital Marketing Services
         </p>
@@ -87,7 +275,7 @@ const WebAbout = () => {
         </p>
       </div>
 
-      <div className="lg:h-[90vh] overflow-y-scroll scroll-smooth hide-scrollbar lg:w-1/2">
+      <div className="lg:h-[90vh] overflow-y-scroll scroll-smooth hide-scrollbar lg:w-[60vw]">
         {webCards.map((item, index) => {
           return (
             <MiniCard
@@ -109,7 +297,7 @@ export default WebAbout;
 
 const MiniCard = ({ img, title, description, textColor, points }) => {
   return (
-    <div className="border-2 p-3 m-2 mt-10 rounded-xl">
+    <div className="border-2 p-3 m-2 mt-10 rounded-xl md:px-8 py-8">
       <div>
         <img
           className="rounded-lg lg:h-[30vh]"
@@ -121,10 +309,10 @@ const MiniCard = ({ img, title, description, textColor, points }) => {
         />
       </div>
       <div className="px-3 py-2">
-        <p className={`text-2xl font-bold ${textColor}`}>
+        <p className={`text-3xl my-2 font-bold ${textColor}`}>
           {title ? title : "Custom Web Design"}
         </p>
-        <p className="font-medium text-sm ">
+        <p className="font-medium text-lg ">
           {description
             ? description
             : "Each website we create is meticulously crafted to deliver a 100% unique online experience tailored to your brand. Our expert designers transform your vision into a dynamic, custom design that enhances your brands visibility, boosts engagement, and drives conversions. With us, your website will not only stand out but also connect deeply with your audience."}
@@ -134,13 +322,12 @@ const MiniCard = ({ img, title, description, textColor, points }) => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 text-white">
         {points?.map((tag, idx) => {
           return (
-            <span className="flex items-start bg-rose-500 px-5 py-2 rounded-xl gap-2">
-             {tag?.icon}
-             <div>
-
-             <p className="font-bold">{tag?.describe[0]}</p>
-             <p>{tag?.describe[1]}</p>
-             </div>
+            <span className={`flex items-center ${tag?.color} px-2 py-4 rounded-xl gap-2`}>
+              {tag?.icon}
+              <div>
+                <p className="font-bold">{tag?.describe[0]}</p>
+                {/* <p>{tag?.describe[1]}</p> */}
+              </div>
             </span>
           );
         })}
