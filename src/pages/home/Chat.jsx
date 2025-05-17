@@ -1,5 +1,5 @@
 import { PhoneOutgoing } from 'lucide-react'
-import {motion, scale} from "motion/react"
+import {easeIn, motion} from "motion/react"
 
 const Chat = () => {
   return (
@@ -8,7 +8,8 @@ const Chat = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <motion.div className="z-50 fixed bottom-7 right-7 bg-blue-600 px-5 py-5 rounded-full md:bottom-10 md:right-10 lg:right-16 lg:bottom-16 lg:p-7 animate-bounce lg:bg-green-500 border-[3px] border-[#32ff20]">
+      <motion.div 
+      className="z-50 fixed bottom-7 right-7 bg-blue-600 px-5 py-5 rounded-full md:bottom-10 md:right-10 lg:right-16 lg:bottom-16 lg:p-7 animate-bounce border-white shadow-lg border-[3px] ">
         <PhoneOutgoing color="white" className=''/>
       </motion.div>
     </a>

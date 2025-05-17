@@ -22,6 +22,8 @@ import {
 } from "lucide-react";
 import React from "react";
 
+
+
 const AdService = () => {
   const seoServiceCard2 = [
     {
@@ -183,53 +185,60 @@ const AdService = () => {
         </div>
       </div>
 
-     <div className="flex flex-col md:flex-row md:px-8 md:py-10 lg:px-16">
-  <div className="px-5 md:w-1/2">
-    <img src="../ads/test-Photoroom.png" alt="Ads Preview" />
-  </div>
+      <div className="flex flex-col md:flex-row md:px-8 md:py-10 lg:px-16">
+        <div className="px-5 md:w-1/2">
+          <img src="../ads/test-Photoroom.png" alt="Ads Preview" />
+        </div>
 
-  <div className="text-center md:w-1/2 lg:text-left">
-    <h1 className="py-2 px-6 text-2xl font-medium lg:text-5xl">
-      Increase your customer with{" "}
-      <span className="text-transparent bg-gradient-to-r from-violet-500 to-blue-500 bg-clip-text font-bold">
-        India's best Ads
-      </span>{" "}
-      Services Company.
-    </h1>
+        <div className="text-center md:w-1/2 lg:text-left">
+          <h1 className="py-2 px-6 text-2xl font-medium lg:text-5xl">
+            Increase your customer with{" "}
+            <span className="text-transparent bg-gradient-to-r from-violet-500 to-blue-500 bg-clip-text font-bold">
+              India's best Ads
+            </span>{" "}
+            Services Company.
+          </h1>
 
-    <p className="px-2.5 text-[15px] text-gray-800 lg:px-7 lg:py-6 lg:text-xl">
-      Boost your business growth with India's leading Ads Services Company. At
-      <strong> Softmore IT Solutions</strong>, we specialize in creating impactful
-      advertising campaigns tailored to your unique business needs. Our expert
-      team leverages cutting-edge platforms and strategies to maximize your
-      reach, drive customer engagement, and increase ROI.
-    </p>
+          <p className="px-2.5 text-[15px] text-gray-800 lg:px-7 lg:py-6 lg:text-xl">
+            Boost your business growth with India's leading Ads Services
+            Company. At
+            <strong> Softmore IT Solutions</strong>, we specialize in creating
+            impactful advertising campaigns tailored to your unique business
+            needs. Our expert team leverages cutting-edge platforms and
+            strategies to maximize your reach, drive customer engagement, and
+            increase ROI.
+          </p>
 
-    <ul className="list-disc text-left px-7 text-gray-800 space-y-2 lg:text-lg">
-      <li>
-        <strong>PPC Advertising</strong> – Get instant traffic with optimized Google Ads.
-      </li>
-      <li>
-        <strong>Social Media Ads</strong> – Run powerful Facebook, Instagram & LinkedIn campaigns.
-      </li>
-      <li>
-        <strong>SEO & Google Ads</strong> – Rank higher and generate long-term organic traffic.
-      </li>
-      <li>
-        <strong>Retargeting & Branding</strong> – Stay top-of-mind with smart remarketing strategies.
-      </li>
-    </ul>
+          <ul className="list-disc text-left px-7 text-gray-800 space-y-2 lg:text-lg">
+            <li>
+              <strong>PPC Advertising</strong> – Get instant traffic with
+              optimized Google Ads.
+            </li>
+            <li>
+              <strong>Social Media Ads</strong> – Run powerful Facebook,
+              Instagram & LinkedIn campaigns.
+            </li>
+            <li>
+              <strong>SEO & Google Ads</strong> – Rank higher and generate
+              long-term organic traffic.
+            </li>
+            <li>
+              <strong>Retargeting & Branding</strong> – Stay top-of-mind with
+              smart remarketing strategies.
+            </li>
+          </ul>
 
-    <p className="mt-4 px-7 text-sm lg:text-base flex gap-2">
-<CircleCheckBig color="blue"/> Transparent Reports <CircleCheckBig color="blue"/> Certified Experts <CircleCheckBig color="blue"/> Scalable Campaigns
-    </p>
+          <p className="mt-4 px-7 text-sm lg:text-base flex gap-2">
+            <CircleCheckBig color="blue" /> Transparent Reports 
+            <CircleCheckBig color="blue" /> Certified Experts 
+            <CircleCheckBig color="blue" /> Scalable Campaigns
+          </p>
 
-    <button className="border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-white">
-      Request A Free Quote
-    </button>
-  </div>
-</div>
-
+          <button className="border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-white">
+            Request A Free Quote
+          </button>
+        </div>
+      </div>
     </>
   );
 };
