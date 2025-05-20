@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import {motion } from "motion/react"
 
 const Work = () => {
   const projects = [
@@ -50,7 +51,19 @@ const Work = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:px-8 md:gap-5 lg:px-24 lg:gap-24">
+      <motion.div 
+      initial={{
+        y:-150,
+        opacity:0
+      }} 
+      transition={{
+        duration:0.5
+      }}
+      whileInView={{
+        y:0,
+        opacity:1
+      }}
+      className="grid grid-cols-1 md:grid-cols-2 md:px-8 md:gap-5 lg:px-24 lg:gap-24">
         {projects.map((proj, idx) => (
           <Project
             key={idx}
@@ -59,7 +72,7 @@ const Work = () => {
             projectDescription={proj.projectDescription}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
@@ -68,7 +81,13 @@ export default Work;
 
 const Project = ({ img, projectName, projectDescription, className }) => {
   return (
-    <div className={cn(" rounded-xl overflow-hidden mx-1 my-4", className)}>
+    <motion.div whileHover={{
+      scale:1.08,
+      skewX:2,
+    }}
+    transition={{
+      duration:0.4
+    }} className={cn(" rounded-xl overflow-hidden mx-1 my-4", className)}>
       <img src={img ? img : "../project/wanerlust3.jpg"} alt="projectImg" />
       <div>
         <p className="font-medium my-1">
@@ -80,6 +99,6 @@ const Project = ({ img, projectName, projectDescription, className }) => {
             : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure optio libero odio vitae tempora. Quae consequatur est qui vitae itaque, iure ipsum eveniet sed voluptatibus sunt officia impedit repudiandae ex."}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -1,34 +1,16 @@
-import { motion, useAnimation } from "framer-motion";
+import { easeInOut, motion, useAnimation } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import React, { useEffect } from "react";
 
 const Summery = () => {
-  const controls = useAnimation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const scaleValue = Math.min(1 + scrollY / 1000, 1.5); // Scale up to 1.5
-      controls.start({ scale: scaleValue });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
-
   return (
     <div
-      className="w-full px-4 overflow-hidden mt-10 pt-5 lg:mt-10 lg:border-b lg:pb-10"
+      className="w-full px-2 overflow-hidden mt-10 pt-5 lg:mt-10 lg:border-b lg:pb-10"
       // style={{ fontFamily: "'Cal Sans', sans-serif" }}
     >
-      <motion.h2
-        className="text-sm md:text-xl lg:text-3xl px-5 text-center bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent mb-5 font-bold"
-        animate={controls}
-        initial={{ scale: 1 }}
-        transition={{
-          duration: 0.2,
-        }}
-      >
+      <motion.h2 
+        
+      className="text-2xl md:text-3xl md:text-left lg:text-center lg:text-4xl px-1 text-center bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent mb-5 font-bold">
         Design with Purpose, Code with Precision, Deliver with Pride
       </motion.h2>
 
@@ -37,7 +19,7 @@ const Summery = () => {
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.8 }}
           whileInView={{ opacity: 1, x: 0 }}
-          src="https://www.ntc.edu/sites/default/files/styles/full_width_16_9/public/2021-06/web-design-header.jpg?itok=4d7TmUMl"
+          src="../home/hero-summar.png"
           className="mt-4 rounded-lg lg:w-1/2"
         />
 
@@ -47,12 +29,30 @@ const Summery = () => {
           whileInView={{ opacity: 1, x: 0 }}
           className="lg:w-1/2 lg:text-lg lg:px-5 mt-5"
         >
-          Since 2019, <span className="text-blue-500 font-semibold">SOFTMORE IT Solutions Pvt Ltd</span> has been redefining digital excellence for ambitious businesses worldwide. We don’t just build websites or run campaigns—we engineer measurable growth through:
-
+          Since 2019,{" "}
+          <span className="text-blue-500 font-semibold">
+            SOFTMORE IT Solutions Pvt Ltd
+          </span>{" "}
+          has been redefining digital excellence for ambitious businesses
+          worldwide. We don’t just build websites or run campaigns—we engineer
+          measurable growth through:
           <ul className="mt-5">
-            <li className=""><div className="font-semibold">Websites That Convert </div>High-performance designs blending aesthetics with revenue-driving functionality</li>
-            <li className=""><div className="font-semibold">Digital Marketing That Delivers </div>Data-powered strategies to dominate search rankings and social platforms</li>
-            <li className=""><div className="font-semibold">Brand Identities That Inspire</div>Distinctive visual storytelling to make your mark unforgettable</li>
+            <li className="">
+              <div className="font-semibold">Websites That Convert </div>
+              High-performance designs blending aesthetics with revenue-driving
+              functionality
+            </li>
+            <li className="">
+              <div className="font-semibold">
+                Digital Marketing That Delivers{" "}
+              </div>
+              Data-powered strategies to dominate search rankings and social
+              platforms
+            </li>
+            <li className="">
+              <div className="font-semibold">Brand Identities That Inspire</div>
+              Distinctive visual storytelling to make your mark unforgettable
+            </li>
           </ul>
           {/* <p className="mt-3"> Born in the digital age, we fuse emerging technologies with battle-tested strategies to future-proof your business. Whether you’re scaling startups or enterprise leaders, our tailored solutions turn your vision into competitive advantage</p> */}
         </motion.p>
