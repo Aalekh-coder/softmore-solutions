@@ -123,7 +123,7 @@ const [isOpen, setIsOpen] = useState(false)
               <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
                 <Accordion type="single" collapsible className="w-full ">
                   <AccordionItem value="item-1" className="py-0 border-none">
-                    <AccordionTrigger className=" font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl p-0 m-0">
+                    <AccordionTrigger display={true} className=" font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl p-0 m-0">
                       SERVICE
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col my-4">

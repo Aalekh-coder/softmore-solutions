@@ -5,7 +5,7 @@ import computerImg from "../../assets/computer.png";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[90vh] flex items-center flex-col lg:flex-row lg:h-[80vh] bg-gradient-to-r from-fuchsia-600 to-indigo-600 overflow-hidden lg:px-10">
+    <div className="w-full h-[90vh] flex items-center flex-col lg:flex-row lg:h-[80vh] bg-gradient-to-r from-fuchsia-600 to-indigo-600 overflow-hidden lg:px-10 ">
       {/* Text Section */}
       <motion.div
         className="h-full w-full text-white px-4 py-5 lg:py-20 lg:px-10"

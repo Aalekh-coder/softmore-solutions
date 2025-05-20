@@ -1,21 +1,19 @@
-import React from 'react';
-import './HeroCard.css'; // Import external CSS
+import React from "react";
+import "./HeroCard.css"; // Import external CSS
 
-const HeroCard = () => {
+const HeroCard = ({ data }) => {
   return (
-    <div className="cards">
-      <div className="card red">
-        <p className="tip">Hover Me</p>
-        <p className="second-text">Lorem Ipsum</p>
-      </div>
-      <div className="card blue">
-        <p className="tip">Hover Me</p>
-        <p className="second-text">Lorem Ipsum</p>
-      </div>
-      <div className="card green">
-        <p className="tip">Hover Me</p>
-        <p className="second-text">Lorem Ipsum</p>
-      </div>
+    <div className="grid grid-cols-1 cards">
+      {data?.map((item,index) => {
+        return (
+          <div className={`card ${item?.bgColor} px-4 py-5`} key={index}>
+            <p className="font-bold mb-3">{item?.heading}</p>
+            <p className="">
+              {item?.description}
+            </p>
+          </div>
+        );
+      })}
     </div>
   );
 };
