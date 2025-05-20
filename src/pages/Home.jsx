@@ -17,7 +17,7 @@ const Home = () => {
       <Hero />
       <Summery />
       <WebAbout />
-      {/* <Work /> */}
+      <Work />
       <WebProcess />
       <ClientReview />
      <Chat />

@@ -78,7 +78,7 @@ const WebAbout = () => {
       title: "Dominate Search Results with Our SEO Powerhouse",
       describe:
         "We don't just improve rankings - we put your business in front of ready-to-buy customers. Our proven strategies.",
-      textColor: "text-[#AAFF00]",
+      textColor: "text-[#48d4ff]",
       points: [
         {
           icon: <Aperture className=""/>,
@@ -186,7 +186,7 @@ const WebAbout = () => {
       title: "Turn Clicks Into Customers With Our Google Ads Mastery",
       describe:
         "We optimize every dollar to attract ready-to-buy customers",
-      textColor: "text-[#00ff99]",
+      textColor: "text-[#a21eca]",
       points: [
         {
           icon: <Crosshair className=""/>,
