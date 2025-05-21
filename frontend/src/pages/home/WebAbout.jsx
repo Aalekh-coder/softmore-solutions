@@ -309,7 +309,7 @@ const MiniCard = ({ img, title, description, textColor, points }) => {
         />
       </div>
       <div className="px-3 py-2">
-        <p className={`text-3xl my-2 font-bold ${textColor}`}>
+        <p className={`text-3xl my-2 font-bold text-blue-700`}>
           {title ? title : "Custom Web Design"}
         </p>
         <p className="font-medium text-lg ">
@@ -319,10 +319,10 @@ const MiniCard = ({ img, title, description, textColor, points }) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 text-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 text-white ">
         {points?.map((tag, idx) => {
           return (
-            <span className={`flex items-center ${tag?.color} px-2 py-4 rounded-xl gap-2`}>
+            <span className={`flex items-center px-2 py-4 rounded-xl gap-2 bg-blue-400`} key={idx}>
               {tag?.icon}
               <div>
                 <p className="font-bold">{tag?.describe[0]}</p>

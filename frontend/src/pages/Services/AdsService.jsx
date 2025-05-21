@@ -149,7 +149,7 @@ const AdService = () => {
       </div>
 
       <div className="flex flex-col md:flex-row-reverse md:px-8 md:py-10 lg:px-16 border-t mt-10 relative ">
-        <div className="absolute top-[100px] left-[67px] animate-pulse md:left-[450px] md:top-[150px] lg:left-[877px] lg:top-[300px] bg-white bg-opacity-55 h-10 w-10 flex items-center justify-center rounded-full lg:h-20 lg:w-20">
+        <div className="absolute top-[100px] left-[67px] animate-pulse md:left-[450px] md:top-[150px] lg:left-[788px] lg:top-[250px] bg-white bg-opacity-55 h-10 w-10 flex items-center justify-center rounded-full lg:h-20 lg:w-20">
           <Play />
         </div>
         <div className="px-5 md:w-1/2 flex gap-2 mt-5 lg:pr-20">

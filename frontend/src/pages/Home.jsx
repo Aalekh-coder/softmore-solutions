@@ -11,9 +11,13 @@ import Chat from "./home/Chat";
 
 
 
+
 const Home = () => {
   return (
     <div className="font-poppins">
+
+    
+
       <Hero />
       <Summery />
       <WebAbout />

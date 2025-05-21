@@ -14,7 +14,7 @@ import {
 
 const Footer= () => {
   return (
-    <footer className="mt-14 text-white bg-gradient-to-r from-red-400 via-violet-600 to-indigo-600 pt-16 pb-8 px-4 md:px-7 lg:px-10">
+    <footer className="mt-14 text-white bg-blue-800 pt-16 pb-8 px-4 md:px-7 lg:px-10">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div
