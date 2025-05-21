@@ -76,7 +76,7 @@ const [isOpen, setIsOpen] = useState(false)
       <Link to="/">
         <img
           className="w-[4rem]"
-          src="https://softmoreit.co.in/img/logo.png"
+          src="logo.png"
           alt="logo"
         />
       </Link>
