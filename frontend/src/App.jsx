@@ -11,6 +11,7 @@ import WebSiteDesign from "./pages/Services/WebSite";
 import Seo from "./pages/Services/Seo";
 import SocialMediaOptimize from "./pages/Services/SocialMediaManagemnt";
 import AdService from "./pages/Services/AdsService";
+import PrivacyPage from "./pages/Privacy";
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
       </Routes>
       <Footer />
     </Router>
