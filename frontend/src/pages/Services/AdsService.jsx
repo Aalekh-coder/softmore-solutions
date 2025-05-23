@@ -1,3 +1,5 @@
+import FormDilog from "@/components/Layout/FormDilog";
+import Button from "@/components/miniComp/button/Button";
 import {
   AtSign,
   BanknoteArrowUp,
@@ -21,8 +23,6 @@ import {
   Youtube,
 } from "lucide-react";
 import React from "react";
-
-
 
 const AdService = () => {
   const seoServiceCard2 = [
@@ -111,9 +111,13 @@ const AdService = () => {
             strategies to maximize your reach, drive customer engagement.
           </p>
 
-          <button className=" border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-white">
+          {/* <button className=" border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-white">
             Request A Free Quote
-          </button>
+          </button> */}
+
+          <FormDilog>
+            <Button text={"Request A Free Quote"} />
+          </FormDilog>
         </div>
       </div>
 
@@ -179,9 +183,13 @@ const AdService = () => {
             measurable results.
           </p>
 
-          <button className=" border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-violet-300 hover:shadow-violet-500 hover:shadow-lg">
+          {/* <button className=" border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-violet-300 hover:shadow-violet-500 hover:shadow-lg">
             Request A Free Quote
-          </button>
+          </button> */}
+
+          <FormDilog>
+            <Button text={"Request A Free Quote"} />
+          </FormDilog>
         </div>
       </div>
 
@@ -228,15 +236,19 @@ const AdService = () => {
             </li>
           </ul>
 
-          <p className="mt-4 px-7 text-sm lg:text-base flex gap-2">
+          <p className="mt-4 px-7 text-sm lg:text-base flex gap-5 mb-5">
             <CircleCheckBig color="blue" /> Transparent Reports 
             <CircleCheckBig color="blue" /> Certified Experts 
             <CircleCheckBig color="blue" /> Scalable Campaigns
           </p>
 
-          <button className="border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-white">
+          {/* <button className="border-blue-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 hover:bg-violet-500 hover:text-white font-bold hover:border-white">
             Request A Free Quote
-          </button>
+          </button> */}
+
+          <FormDilog>
+            <Button text={"Request A Free Quote"} />
+          </FormDilog>
         </div>
       </div>
     </>

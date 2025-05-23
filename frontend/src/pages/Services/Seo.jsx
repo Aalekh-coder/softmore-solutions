@@ -1,3 +1,4 @@
+import FormDilog from "@/components/Layout/FormDilog";
 import Button from "@/components/miniComp/button/Button";
 import {
   BanknoteArrowUp,
@@ -12,7 +13,6 @@ import {
   ShoppingBag,
   Users,
 } from "lucide-react";
-import React from "react";
 
 const Seo = () => {
   const seoServiceCards = [
@@ -135,9 +135,13 @@ const Seo = () => {
             our marketing experts today for a free consultation!
           </p>
 
-          <button className="font-medium border-gray-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9">
+          {/* <button className="font-medium border-gray-800 border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9">
             Request A Free Quote
-          </button>
+          </button> */}
+
+          <FormDilog>
+                    <Button text={"Request A Free Quote"} />
+                  </FormDilog>
         </div>
       </div>
 
@@ -168,9 +172,13 @@ const Seo = () => {
             strengthen your brand.
           </p>
 
-          <button className="font-medium border-white border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 bg-gradient-to-r from-rose-500 to-blue-500 text-white">
+          {/* <button className="font-medium border-white border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 bg-gradient-to-r from-rose-500 to-blue-500 text-white">
             Request A Free Quote
-          </button>
+          </button> */}
+ <FormDilog>
+                    <Button text={"Request A Free Quote"} />
+                  </FormDilog>
+          
         </div>
       </div>
 

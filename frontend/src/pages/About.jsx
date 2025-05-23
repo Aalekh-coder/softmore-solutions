@@ -329,31 +329,6 @@ const About = () => {
             We're not just another agency. We're your digital partner — curious,
             committed, and constantly evolving to help your brand thrive online.
           </motion.p>
-
-          <div className="border-b lg:my-10">
-            <p className="flex items-center gap-3 text-lg my-2 font-semibold lg:text-2xl">
-              <Atom className="lg:h-8 lg:w-8 text-blue-400" /> Technologies
-            </p>
-            <p className="font-medium text-gray-800 lg:text-lg">
-              Our Software development activities are not limited to a single
-              tech stack, we are well versed in several trending technologies
-              which really makes our team very dynamic and competitive in the
-              market
-            </p>
-          </div>
-
-          <div className="border-b lg:my-10">
-            <p className="flex items-center gap-3 text-xl my-2 font-semibold lg:text-2xl">
-              <Anvil className="lg:h-8 lg:w-8 text-red-400" />
-              Specialization​
-            </p>
-            <p className="font-medium text-gray-800 lg:text-lg">
-              Our Software development activities are not limited to a single
-              tech stack, we are well versed in several trending technologies
-              which really makes our team very dynamic and competitive in the
-              market
-            </p>
-          </div>
         </div>
       </div>
 
@@ -544,7 +519,8 @@ const About = () => {
             <span className="bg-gradient-to-r from-fuchsia-600 to-blue-500 bg-clip-text text-transparent">
               Softmore IT soultions{" "}
             </span>
-           you don’t just get a service — you get a team that’s as committed to your growth as you are.
+            you don’t just get a service — you get a team that’s as committed to
+            your growth as you are.
           </p>
         </div>
       </div>

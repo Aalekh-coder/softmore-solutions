@@ -1,5 +1,6 @@
+import Button from "@/components/miniComp/button/Button";
 import { cn } from "@/lib/utils";
-import {motion } from "motion/react"
+import { motion } from "motion/react";
 
 const Work = () => {
   const projects = [
@@ -42,28 +43,30 @@ const Work = () => {
             services and how we've helped businesses craft impactful user
             experiences, get in touch with us today.
           </p>
-          <button className="py-2 px-5 border-zinc-500 border-2 rounded-full my-5">
-            View Our Portfolio
-          </button>
+
+          <div className="mt-5">
+            <Button text={"View Our Portfolio"} textColor={"text-black"} />
+          </div>
         </div>
         <div>
           <Project className={"hidden md:block"} />
         </div>
       </div>
 
-      <motion.div 
-      initial={{
-        y:-150,
-        opacity:0
-      }} 
-      transition={{
-        duration:0.5
-      }}
-      whileInView={{
-        y:0,
-        opacity:1
-      }}
-      className="grid grid-cols-1 md:grid-cols-2 md:px-8 md:gap-5 lg:px-24 lg:gap-24">
+      <motion.div
+        initial={{
+          y: -150,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 0.5,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        className="grid grid-cols-1 md:grid-cols-2 md:px-8 md:gap-5 lg:px-24 lg:gap-24"
+      >
         {projects.map((proj, idx) => (
           <Project
             key={idx}
@@ -81,13 +84,16 @@ export default Work;
 
 const Project = ({ img, projectName, projectDescription, className }) => {
   return (
-    <motion.div whileHover={{
-      scale:1.08,
-      skewX:2,
-    }}
-    transition={{
-      duration:0.4
-    }} className={cn(" rounded-xl overflow-hidden mx-1 my-4", className)}>
+    <motion.div
+      whileHover={{
+        scale: 1.08,
+        skewX: 2,
+      }}
+      transition={{
+        duration: 0.4,
+      }}
+      className={cn(" rounded-xl overflow-hidden mx-1 my-4", className)}
+    >
       <img src={img ? img : "../project/wanerlust3.jpg"} alt="projectImg" />
       <div>
         <p className="font-medium my-1">

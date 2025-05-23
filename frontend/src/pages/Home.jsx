@@ -1,5 +1,5 @@
 import Navbar from "@/components/Layout/Navbar";
-import React from "react";
+
 import Hero from "./home/Hero";
 import Work from "./home/Work";
 import Footer from "@/components/Layout/Footer";
@@ -11,13 +11,11 @@ import Chat from "./home/Chat";
 
 
 
-
 const Home = () => {
+
+
   return (
     <div className="font-poppins">
-
-    
-
       <Hero />
       <Summery />
       <WebAbout />

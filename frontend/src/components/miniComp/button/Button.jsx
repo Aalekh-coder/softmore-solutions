@@ -4,7 +4,9 @@ import styled from "styled-components";
 const Button = ({ text }) => {
   return (
     <StyledWrapper>
-      <button className="font-poppins">{text ? text : "REQUEST A QUOTE"}</button>
+      <button className="font-poppins">
+        {text ? text : "REQUEST A QUOTE"}
+      </button>
     </StyledWrapper>
   );
 };
@@ -13,13 +15,13 @@ const StyledWrapper = styled.div`
   button {
     position: relative;
     padding: 10px 20px;
-    border-radius: 2px;
+    border-radius: 32px;
     border: 1px solid white;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
-    background: transparent;
+    background: #5544E4;
     color: #fff;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
@@ -27,7 +29,6 @@ const StyledWrapper = styled.div`
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    
   }
 
   button:hover {

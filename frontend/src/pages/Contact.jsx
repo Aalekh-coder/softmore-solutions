@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* first section  */}
       <div className="flex flex-col lg:flex-row-reverse lg:items-center lg:mt-24">
         {/* text  */}
@@ -149,10 +149,12 @@ const Contact = () => {
             <p className="px-7 text-gray-400 text-lg mt-3">
               Ditch the Slow Website
             </p>
+<a href={`tel:${"+919266474766"}`} >
 
             <Button className="bg-gradient-to-r from-sky-600 to-pink-600 mx-5 my-6 flex items-center">
               Get in Touch <ArrowRight />
             </Button>
+</a>
           </Card>
         </motion.div>
       </div>
@@ -172,11 +174,11 @@ const Contact = () => {
         className="mx-7 text-center lg:my-20"
       >
         <p className="text-4xl font-bold my-8 md:text-5xl">Give Us A Call</p>
-        <div className="">
+        <a className="block" href={`tel:${"+919266474766"}`} >
           <Button className="bg-gradient-to-r from-fuchsia-600 to-indigo-600 rounded-xl px-10 py-5 text-lg md:px-14 md:py-6">
             Call Us <PhoneCall />
           </Button>
-        </div>
+        </a>
 
         <div className="mt-10 px-5 lg:px-20">
           <h2 className="text-center text-4xl font-bold text-purple-950 mb-6">
