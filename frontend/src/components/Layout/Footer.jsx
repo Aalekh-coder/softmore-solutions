@@ -60,12 +60,12 @@ const Footer = () => {
               Services
             </h4>
             <ul className="space-y-2">
-              <FooterLink to="/services" label="Web Design" />
-              <FooterLink to="/services" label="PPC Marketing" />
-              <FooterLink to="/services" label="Digital Marketing" />
-              <FooterLink to="/services" label="Website Development" />
-              <FooterLink to="/services" label="E-commerce Solutions" />
-              <FooterLink to="/services" label="Brand Identity" />
+              <FooterLink to="/services/web-design" label="Web Design" />
+              <FooterLink to="/services/seo" label="PPC Marketing" />
+              <FooterLink to="/services/seo" label="Digital Marketing" />
+              <FooterLink to="/services/web-design" label="Website Development" />
+              <FooterLink to="/services/web-design" label="E-commerce Solutions" />
+              <FooterLink to="/services/seo" label="Brand Identity" />
             </ul>
           </motion.div>
 
@@ -198,7 +198,7 @@ const SocialLink = ({ icon, href }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white hover:bg-primary-600 p-2 rounded-full transition-colors"
+      className="text-white hover:bg-primary-600 p-2 rounded-full transition-colors shadow-lg hover:shadow-2xl shadow-blue-600 hover:scale-150 ease-linear"
     >
       {icon}
     </a>
