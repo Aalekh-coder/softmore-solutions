@@ -33,19 +33,19 @@ const Footer = () => {
             <div className="flex space-x-4">
               <SocialLink
                 icon={<Facebook size={18} />}
-                href="https://facebook.com"
+                href="https://www.facebook.com/SoftemoreIT"
               />
               <SocialLink
                 icon={<Twitter size={18} />}
-                href="https://twitter.com"
+                href="https://www.facebook.com/SoftemoreIT"
               />
               <SocialLink
                 icon={<Instagram size={18} />}
-                href="https://instagram.com"
+                href="https://www.instagram.com/softmore_it/"
               />
               <SocialLink
                 icon={<Linkedin size={18} />}
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/softmore-it/"
               />
             </div>
           </motion.div>
