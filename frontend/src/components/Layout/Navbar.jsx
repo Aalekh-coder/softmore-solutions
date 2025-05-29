@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
       <Link to="/">
-        <img className="w-[4rem]" src="softmoreLogo.png" alt="logo" />
+        <img className="w-[4rem]" src="/softmoreLogo.png" alt="logo" />
       </Link>
 
       <div className="flex items-center gap-8">
@@ -71,6 +71,12 @@ const Navbar = () => {
                 </Link>
               </div>
 
+
+ <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+                <Link to="/about" onClick={() => setIsOpen(false)}>
+                  Who We are
+                </Link>
+              </div>
               {/* dropdown  */}
 
               <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl lg:text-4xl">
@@ -78,7 +84,7 @@ const Navbar = () => {
                   <AccordionItem value="item-1" className="py-0 border-none">
                     <AccordionTrigger
                       display={true}
-                      className=" font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl p-0 m-0"
+                      className=" font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl p-0"
                     >
                       SERVICE
                     </AccordionTrigger>
@@ -122,11 +128,7 @@ const Navbar = () => {
                 </Accordion>
               </div>
 
-              <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                <Link to="/about" onClick={() => setIsOpen(false)}>
-                  Who We are
-                </Link>
-              </div>
+             
               <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
                 <Link to="/pricing" onClick={() => setIsOpen(false)}>
                   OUR PRICING

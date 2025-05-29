@@ -7,12 +7,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import api from "@/services/api";
 import toast from "react-hot-toast";
 import axios from "axios";
+import Button from "../miniComp/button/Button";
+
 
 const FormDilog = ({ children }) => {
   const [name, setName] = useState("");
@@ -30,7 +32,7 @@ const FormDilog = ({ children }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when submitting
+    setLoading(true); 
     setError(null);
 
 
@@ -76,12 +78,14 @@ const FormDilog = ({ children }) => {
 
   return (
     <Dialog>
-      <DialogTrigger>{children}</DialogTrigger>
-      <DialogContent className="rounded-2xl w-[95vw]">
-        <p className="font-bold text-2xl text-center bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent">
+      <DialogTrigger>
+        <Button />
+      </DialogTrigger>
+      <DialogContent aria-describedby="dialog-description" className="rounded-2xl w-[95vw]">
+        <DialogTitle id="dialog-title" className="font-bold text-2xl text-center bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent">
           Get A Free Quote
-        </p>
-        <p className="text-sm text-gray-500">
+        </DialogTitle>
+        <p className="text-sm text-gray-500" id="dialog-description">
           Fill out the Enquiry Form and we'll get back to You.
         </p>
 
@@ -146,3 +150,5 @@ const FormDilog = ({ children }) => {
 };
 
 export default FormDilog;
+
+

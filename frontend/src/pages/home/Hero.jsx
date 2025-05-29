@@ -13,14 +13,14 @@ const Hero = () => {
         whileInView={{ opacity: 1, x: 0 }}
       >
         <p className="font-semibold lg:text-xl">Premium Web Design Agency</p>
-        <motion.p
+        <motion.h1
           className="font-extrabold text-2xl mt-1 md:text-3xl md:mt-9 lg:text-5xl"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           We Don’t Just Build Websites—We Build Sales Machines
-        </motion.p>
+        </motion.h1>
         <p className="text-sm lg:text-xl mt-2">
           We design high-performance sites proven to increase leads by 200%.
         </p>
