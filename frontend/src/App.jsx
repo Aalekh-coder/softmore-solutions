@@ -12,6 +12,7 @@ import Seo from "./pages/Services/Seo";
 import SocialMediaOptimize from "./pages/Services/SocialMediaManagemnt";
 import AdService from "./pages/Services/AdsService";
 import PrivacyPage from "./pages/Privacy";
+import NotFound from "./pages/NotFound";
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

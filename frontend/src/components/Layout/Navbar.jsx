@@ -56,7 +56,7 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent className="px-4 bg-white md:px-10">
             <div></div>
-            <div className="lg:mt-20 mt-5">
+            <div className="lg:mt-10 mt-5">
               <Link to="/" onClick={() => setIsOpen(false)}>
                 <House size="40" className="text-[#2965e6] lg:w-20 lg:h-20" />
               </Link>
