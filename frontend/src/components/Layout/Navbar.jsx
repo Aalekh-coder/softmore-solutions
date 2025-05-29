@@ -148,7 +148,7 @@ const Navbar = () => {
             <div className="flex mt-8 items-center gap-10 md:mt-16">
               {social?.map((item, index) => {
                 return (
-                  <motion.a href={item?.link} whileHover={{scale:1.2}} className="" key={index}>
+                  <motion.a href={item?.link} whileHover={{scale:1.2}}  key={index}>
                     {item?.icon}
                   </motion.a>
                 );
@@ -163,22 +163,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-{
-  /* <motion.div
-              initial="hidden"
-              animate="visible"
-              transition={{ staggerChildren: 0.1 }}
-              className="flex flex-col gap-4 px-4 py-6"
-            >
-              {navLinks.map((text, index) => (
-                <motion.span
-                  key={index}
-                  variants={itemVariants}
-                  whileHover="hover"
-                  className="cursor-pointer text-lg font-medium text-white"
-                >
-                  <Link to={text.to}>{text.text}</Link>
-                </motion.span>
-              ))}
-            </motion.div> */
-}
