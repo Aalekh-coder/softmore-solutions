@@ -2,8 +2,6 @@ import {
   AlignRight,
   AppWindow,
   AtSign,
-  BookUser,
-  Earth,
   Facebook,
   Flame,
   House,

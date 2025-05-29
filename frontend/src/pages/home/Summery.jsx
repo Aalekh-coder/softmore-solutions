@@ -23,7 +23,7 @@ const Summery = () => {
           className="mt-4 rounded-lg lg:w-1/2"
         />
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, x: 200 }}
           transition={{ duration: 0.8 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -54,8 +54,8 @@ const Summery = () => {
               Distinctive visual storytelling to make your mark unforgettable
             </li>
           </ul>
-          {/* <p className="mt-3"> Born in the digital age, we fuse emerging technologies with battle-tested strategies to future-proof your business. Whether you’re scaling startups or enterprise leaders, our tailored solutions turn your vision into competitive advantage</p> */}
-        </motion.p>
+     
+        </motion.div>
       </div>
     </div>
   );

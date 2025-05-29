@@ -124,9 +124,7 @@ const WebSiteDesign = () => {
           company to elevate your brand, enhance user engagement, and deliver
           design solutions that drive impactful conversions.
         </p>
-        {/* <button className=" font-medium border-2 border-zinc-700 text-lg rounded-full px-8 py-2 my-5 lg:my-0">
-          Request A Free Quote{" "}
-        </button> */}
+        
         <FormDilog>
           <Button text={"Request A Free Quote"} />
         </FormDilog>
@@ -139,12 +137,12 @@ const WebSiteDesign = () => {
 
       <div className="lg:flex ">
         <div className="lg:w-1/2">
-          <p className="font-medium text-xl md:text-2xl lg:text-3xl ">
-            <div className="bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent font-bold text-2xl  md:text-3xl lg:text-5xl lg:my-2">
+          <div className="font-medium text-xl md:text-2xl lg:text-3xl ">
+            <div className="pb-2 bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text text-transparent font-bold text-2xl  md:text-3xl lg:text-5xl lg:my-2">
               Designing UI/UX That
             </div>{" "}
             Helps You Become Brand
-          </p>
+          </div>
 
           <p className="text-sm text-gray-700 px-2 my-5 md:text-lg md:px-14">
             Partner with the leading UI/UX design company to create an interface
