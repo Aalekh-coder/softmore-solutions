@@ -26,53 +26,20 @@ import FormDilog from "./FormDilog";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navLinks = [
-    {
-      to: "/",
-      text: "Home",
-    },
-    {
-      to: "/services",
-      text: "SERVICES",
-    },
-    {
-      to: "/about",
-      text: "What We are",
-    },
-    {
-      to: "/pricing",
-      text: "OUR PRICING",
-    },
-    {
-      to: "/blog",
-      text: "BLOG",
-    },
-    {
-      to: "/contact",
-      text: "CONTACT US",
-    },
-  ];
+
 
   const social = [
-    <Instagram size={40} />,
-    <Facebook size={40} />,
-    <Linkedin size={40} />,
+   { icon:<Instagram size={40} className="text-rose-500"/>, link:"https://www.instagram.com/softmore_it/"},
+    {icon:<Facebook size={40} className="text-blue-500"/>, link:"https://www.facebook.com/SoftemoreIT"},
+    {icon:<Linkedin size={40} className="text-cyan-500"/>, link:"https://www.linkedin.com/company/softmore-it/"},
   ];
 
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 },
-    hover: {
-      scale: 1.05,
-      color: "#fff", // Tailwind indigo-500
-      transition: { type: "spring", stiffness: 300 },
-    },
-  };
+
 
   return (
     <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
       <Link to="/">
-        <img className="w-[4rem]" src="logo.png" alt="logo" />
+        <img className="w-[4rem]" src="softmoreLogo.png" alt="logo" />
       </Link>
 
       <div className="flex items-center gap-8">
@@ -97,17 +64,9 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* <div className="mt-10">
-              {navLinks.map((item, index) => {
-                return (
-                  <div className="font-bold bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
-                    <Link to={item?.to}>{item?.text}</Link>
-                  </div>
-                );
-              })}
-            </div> */}
+           
 
-            <div className="mt-10">
+            <div className="mt-8">
               <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
                 <Link to="/" onClick={() => setIsOpen(false)}>
                   HOME
@@ -116,7 +75,7 @@ const Navbar = () => {
 
               {/* dropdown  */}
 
-              <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+              <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl lg:text-4xl">
                 <Accordion type="single" collapsible className="w-full ">
                   <AccordionItem value="item-1" className="py-0 border-none">
                     <AccordionTrigger
@@ -186,12 +145,12 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex mt-8 items-center gap-10 opacity-50 md:mt-16">
+            <div className="flex mt-8 items-center gap-10 md:mt-16">
               {social?.map((item, index) => {
                 return (
-                  <div className="" key={index}>
-                    {item}
-                  </div>
+                  <motion.a href={item?.link} whileHover={{scale:1.2}} className="" key={index}>
+                    {item?.icon}
+                  </motion.a>
                 );
               })}
             </div>
