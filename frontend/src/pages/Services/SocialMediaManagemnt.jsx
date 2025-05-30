@@ -101,15 +101,14 @@ const SocialMediaManagemnt = () => {
       description:
         "See the difference in your brand’s reach and engagement with our data-driven social media strategies. We focus on delivering measurable improvements you can track and celebrate.",
       bgColor: "bg-blue-500",
-      icon:<Activity />
+      icon: <Activity />,
     },
     {
       heading: "Transparent Performance Metrics",
       description:
         "Monitor your progress with clear analytics and regular reports. We provide insights into what’s working, so you always know how your campaigns are performing.",
       bgColor: "bg-purple-500",
-      icon:<Activity />
-
+      icon: <Activity />,
     },
     {
       heading: "ROI You Can Count On",
@@ -139,6 +138,44 @@ const SocialMediaManagemnt = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Page Title */}
+        <title>
+          Social Media Marketing Agency in Delhi | Softmore IT Solution
+        </title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Want to grow your social Media Handle? We are the best Social Media Marketing Agency in Delhi. We provide social growth and create your social media into a lead-generation platform."
+        />
+
+        {/* Canonical Link */}
+        <link
+          rel="canonical"
+          href="https://www.softmoreit.co.in/social-media-marketing.php"
+        />
+
+        {/* Open Graph (OG) Tags for Social Media Sharing */}
+        <meta
+          property="og:title"
+          content="Social Media Marketing Agency in Delhi | Softmore IT Solution"
+        />
+        <meta
+          property="og:description"
+          content="Want to grow your social Media Handle? We are the best Social Media Marketing Agency in Delhi. We provide social growth and create your social media into a lead-generation platform."
+        />
+        <meta
+          property="og:image"
+          content="https://www.softmoreit.co.in/social-media/images/box_img.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.softmoreit.co.in/social-media-marketing.php"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Softmore IT" />
+      </Helmet>
       <div className="flex flex-col md:flex-row md:items-start md:justify-between px-6 py-10 lg:px-28  text-black lg:mb-5 ">
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-xl md:text-2xl font-bold leading-tight">
@@ -252,7 +289,6 @@ const SocialMediaManagemnt = () => {
       </div>
 
       {/* fifth section  */}
-     
     </>
   );
 };
@@ -295,9 +331,7 @@ const SeoCardFeature = ({ icon, text, describe, bgColor, index }) => {
     <div className="shadow-lg px-5 mx-5 my-5 py-5 border rounded-xl">
       <div className="flex items-center gap-5 font-medium text-xl ">
         {/* <span className={`${bgColor} px-6 py-4 rounded-full text-white text-3xl`}>{icon}</span> */}
-        <h2
-          className={` lg:text-2xl  px-5  py-3 rounded-3xl`}
-        >{icon}</h2>
+        <h2 className={` lg:text-2xl  px-5  py-3 rounded-3xl`}>{icon}</h2>
       </div>
       <p className={`px-5 text-[16px] mt-5 lg:text-lg font-medium`}>
         {describe}

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Layout/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
@@ -14,28 +15,29 @@ import AdService from "./pages/Services/AdsService";
 import PrivacyPage from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
-
-
 const App = () => {
   return (
-    <Router>
-      <Navbar />
+      <Router>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services/web-design" element={<WebSiteDesign />} />
-        <Route path="/services/seo" element={<Seo />} />
-        <Route path="/services/social-media-management" element={<SocialMediaOptimize />} />
-        <Route path="/services/ads" element={<AdService />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/privacy-policy" element={<PrivacyPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services/web-design" element={<WebSiteDesign />} />
+          <Route path="/services/seo" element={<Seo />} />
+          <Route
+            path="/services/social-media-management"
+            element={<SocialMediaOptimize />}
+          />
+          <Route path="/services/ads" element={<AdService />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/privacy-policy" element={<PrivacyPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
   );
 };
 

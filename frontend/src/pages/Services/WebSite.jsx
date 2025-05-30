@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Button from "@/components/miniComp/button/Button";
 import FormDilog from "@/components/Layout/FormDilog";
+import { Helmet } from "react-helmet-async";
 
 const WebSiteDesign = () => {
   const cardUI = [
@@ -109,6 +110,25 @@ const WebSiteDesign = () => {
 
   return (
     <div className="text-center">
+
+      <Helmet>
+      {/* Page Title */}
+      <title>Best Web Designing Company in Delhi | Softmore IT Solution</title>
+
+      {/* Meta Description */}
+      <meta name="description" content="Looking for the best website designing Company in Delhi? As Softmore IT Solution, we provide top-notch web design services at affordable prices. Contact us now." />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://www.softmoreit.co.in/services/seo" />
+
+      {/* Open Graph (OG) Meta Tags for Social Media Sharing */}
+      <meta property="og:title" content="Best Web Designing Company in Delhi | Softmore IT Solution" />
+      <meta property="og:description" content="Looking for the best web designing Company in Delhi? As Softmore IT Solution, we provide top-notch web designing services at affordable prices. Contact us now." />
+      <meta property="og:image" content="https://www.softmoreit.co.in/seo.png" />
+      <meta property="og:url" content="https://www.softmoreit.co.in/services/seo" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Softmore IT Solution" />
+    </Helmet>
       {/* first section  */}
       <div>
         <h1 className="font-medium  text-zinc-800 text-4xl md:text-4xl lg:mt-10 lg:text-5xl  mt-14 ">

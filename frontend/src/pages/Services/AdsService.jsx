@@ -14,6 +14,7 @@ import {
   Youtube,
 } from "lucide-react";
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const AdService = () => {
   const seoServiceCard2 = [
@@ -80,6 +81,24 @@ const AdService = () => {
   ];
   return (
     <>
+     <Helmet>
+      {/* Page Title */}
+      <title>Pay Per Click Agency in Delhi NCR, India | Softmore IT Solution</title>
+
+      {/* Meta Description */}
+      <meta name="description" content="Need PPC service? Software It Solution Boosts your business with the top Pay Per Click Agency in Delhi NCR, India. Get instant traffic and leads!" />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://www.softmoreit.co.in/ppc.php" />
+
+      {/* Open Graph (OG) Meta Tags for Social Media Sharing */}
+      <meta property="og:title" content="Pay Per Click Agency in Delhi NCR, India | Softmore IT Solution" />
+      <meta property="og:description" content="Need PPC service? Software It Solution Boosts your business with the top Pay Per Click Agency in Delhi NCR, India. Get instant traffic and leads!" />
+      <meta property="og:image" content="https://www.softmoreit.co.in/img/pay-per-click.png" />
+      <meta property="og:url" content="https://www.softmoreit.co.in/ppc.php" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Softmore IT Solution" />
+    </Helmet>
       <div className="flex flex-col md:flex-row-reverse md:px-8 md:py-10 lg:px-16">
         <div className="px-5 md:w-1/2">
           <img src="../ads/ads-Photoroom.png" alt="" />

@@ -13,6 +13,7 @@ import {
   ShoppingBag,
   Users,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Seo = () => {
   const seoServiceCards = [
@@ -108,10 +109,28 @@ const Seo = () => {
   ];
   return (
     <>
+    <Helmet>
+      {/* Page Title */}
+      <title>Best SEO Services in India | Softmore IT Solution</title>
+
+      {/* Meta Description */}
+      <meta name="description" content="Looking for SEO services? Softmore IT offers top-rated SEO solutions in India to help your business rank #1 on search engines and drive real growth. Book now!" />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://www.softmoreit.co.in/seo.php" />
+
+      {/* Open Graph (OG) Meta Tags for Social Media Sharing */}
+      <meta property="og:title" content="Best SEO Services in India | Softmore IT Solution" />
+      <meta property="og:description" content="Looking for SEO services? Softmore IT offers top-rated SEO solutions in India to help your business rank #1 on search engines and drive real growth. Book now!" />
+      <meta property="og:image" content="https://www.softmoreit.co.in/seo-assets/images/banner-right-image.png" />
+      <meta property="og:url" content="https://www.softmoreit.co.in/seo.php" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Softmore IT Solution" />
+    </Helmet>
       {/* first  */}
       <div className="flex flex-col md:flex-row-reverse md:px-8 md:py-10 lg:px-16">
         <div className="px-5 md:w-1/2">
-          <img src="../seo.png" alt="" />
+          <img src="../seo.png" alt="SeoImage" />
         </div>
 
         <div className="text-center md:w-1/2 lg:text-left">
@@ -140,8 +159,8 @@ const Seo = () => {
           </button> */}
 
           <FormDilog>
-                    <Button text={"Request A Free Quote"} />
-                  </FormDilog>
+            <Button text={"Request A Free Quote"} />
+          </FormDilog>
         </div>
       </div>
 
@@ -175,10 +194,9 @@ const Seo = () => {
           {/* <button className="font-medium border-white border-[4px] px-7 py-3 rounded-3xl my-5 lg:ml-9 bg-gradient-to-r from-rose-500 to-blue-500 text-white">
             Request A Free Quote
           </button> */}
- <FormDilog>
-                    <Button text={"Request A Free Quote"} />
-                  </FormDilog>
-          
+          <FormDilog>
+            <Button text={"Request A Free Quote"} />
+          </FormDilog>
         </div>
       </div>
 
