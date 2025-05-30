@@ -1,4 +1,3 @@
-
 import {
   AccordionContent,
   AccordionItem,
@@ -6,7 +5,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { Accordion } from "@radix-ui/react-accordion";
-import { AppWindow, AtSign, CheckCheck, ChevronRight, Flame, Megaphone } from "lucide-react";
+import { AppWindow, AtSign, CheckCheck, Flame, Megaphone } from "lucide-react";
 import React from "react";
 
 const Pricing = () => {
@@ -205,7 +204,6 @@ const Pricing = () => {
       ],
     },
   ];
-  
   return (
     <div className="px-4 py-5">
       <div>
@@ -332,7 +330,29 @@ const Pricing = () => {
             />
           );
         })}
-       
+        {/* <PricingCard
+          packageName="STARTER BOOST PLAN"
+          price="₹8,000/mo"
+          duration="Billed Monthly"
+          services={services}
+          className="mt-6"
+          className2={"bg-gradient-to-r from-indigo-400 to-cyan-400"}
+        />
+        <PricingCard
+          packageName="Business Package"
+          price="299/mo"
+          duration="Billed Monthly"
+          services={services}
+          className2={"bg-gradient-to-r from-cyan-500 to-blue-500"}
+        />
+        <PricingCard
+          packageName="Business Package"
+          price="299/mo"
+          duration="Billed Monthly"
+          services={services}
+          className="mt-6"
+          className2={"bg-gradient-to-r from-indigo-500 to-blue-500"}
+        /> */}
       </div>
 
       <div className="md:px-10 md:py-5 lg:px-32">
@@ -412,14 +432,24 @@ const PricingCard = ({
       <div className="px-5">
         {services.map((item, index) => {
           return (
-           <div key={index} className="mb-5">
-            <p className="font-medium text-lg ">{item?.detailsTitle}</p>
-            {
-              item?.detailsItems?.map(value=>(
-                <p className="flex items-center gap-2 ml-3 text-gray-500 mb-1 capitalize"> <ChevronRight className="text-blue-500"/>{value}</p>
-              ))
-            }
-           </div>
+            <Accordion type="single" collapsible className="w-full ">
+              <AccordionItem value={`item-${index + 1}`}>
+                <AccordionTrigger
+                  display={true}
+                  className="border-b font-semibold lg:text-xl"
+                >
+                  {item?.detailsTitle}
+                </AccordionTrigger>
+                {item?.detailsItems?.map((detailsItem, index) => (
+                  <AccordionContent
+                    key={index}
+                    className="lg:text-lg font-bold flex items-start gap-2"
+                  >
+                    <CheckCheck className="text-sky-500" /> {detailsItem}
+                  </AccordionContent>
+                ))}
+              </AccordionItem>
+            </Accordion>
           );
         })}
       </div>
@@ -431,8 +461,3 @@ const PricingCard = ({
     </div>
   );
 };
-
-
-// {item?.detailsTitle}
-
-// item?.detailsItems?.map

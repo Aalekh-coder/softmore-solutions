@@ -1,24 +1,15 @@
 import FormDilog from "@/components/Layout/FormDilog";
 import Button from "@/components/miniComp/button/Button";
 import {
-  AtSign,
-  BanknoteArrowUp,
-  BowArrow,
   CircleCheckBig,
   Facebook,
   Factory,
   Goal,
   Instagram,
-  MailSearch,
   Monitor,
-  MonitorDot,
   Play,
-  Podcast,
-  Ribbon,
   Search,
-  ShoppingBag,
   ShoppingBasket,
-  Users,
   Volleyball,
   Youtube,
 } from "lucide-react";

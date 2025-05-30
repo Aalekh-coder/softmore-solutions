@@ -115,11 +115,11 @@ const Seo = () => {
         </div>
 
         <div className="text-center md:w-1/2 lg:text-left">
-          <p className="text-sm text-gray-900 px-2 my-5 lg:text-lg">
+          <h1 className="text-sm text-gray-900 px-2 my-5 lg:text-lg">
             {" "}
             Search Engine Optimization Started{" "}
             <span className="font-medium">$150</span> Per Month
-          </p>
+          </h1>
           <p className="py-2 px-6 text-2xl font-medium lg:text-5xl">
             Skyrocket Your Sales with Best{" "}
             <span className="text-transparent bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text font-bold">

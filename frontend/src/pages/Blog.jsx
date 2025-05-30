@@ -99,9 +99,9 @@ const Blog = () => {
   ];
   return (
     <div className="px-2 py-5 md:px-14 lg:px-20">
-      <p className="font-medium text-center text-2xl md:text-3xl">
+      <h1 className="font-medium text-center text-2xl md:text-3xl">
         Welcome to Our <span className="text-blue-700">Blogs</span>
-      </p>
+      </h1>
       <div className="relative ">
         <Input
           placeholder="Search blog..."

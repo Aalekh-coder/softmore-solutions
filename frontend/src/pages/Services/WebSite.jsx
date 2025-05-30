@@ -111,9 +111,9 @@ const WebSiteDesign = () => {
     <div className="text-center">
       {/* first section  */}
       <div>
-        <div className="font-medium  text-zinc-800 text-4xl md:text-4xl lg:mt-10 lg:text-5xl  mt-14 ">
+        <h1 className="font-medium  text-zinc-800 text-4xl md:text-4xl lg:mt-10 lg:text-5xl  mt-14 ">
           Elevate Your <span>Platform with</span>
-        </div>
+        </h1>
 
         <div className="font-extrabold px-[4px] mt-3 bg-gradient-to-r from-fuchsia-500 to-indigo-700 text-transparent bg-clip-text text-xl md:text-2xl lg:text-3xl  ">
           UI/UX Design Services Company
