@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { CircleCheckBig } from "lucide-react";
 
-export function AccordionDemo() {
+export function AccordionDemo({display}) {
    const accordingtext = [
     {
       title: "Web Design",
@@ -59,11 +59,11 @@ export function AccordionDemo() {
   ];
 
   return (
-    <Accordion type="single" collapsible className="w-full px-3 mt-10 md:px-10">
+    <Accordion type="single"  collapsible className="w-full px-3 mt-10 md:px-10">
       {accordingtext?.map((item, index) => {
         return (
           <AccordionItem value={`item-${index}`} key={index}>
-            <AccordionTrigger className={`font-bold text-lg ${item?.color}`}>
+            <AccordionTrigger className={`font-bold text-lg ${item?.color}`} display={display}>
               {item?.title}
             </AccordionTrigger>
             <AccordionContent className="text-left">

@@ -245,7 +245,7 @@ const WebSiteDesign = () => {
           <img src="../servicesPagesdesign.png" alt="" />
         </div>
         <div className="lg:w-1/2">
-          <AccordionDemo />
+          <AccordionDemo display={true}/>
         </div>
       </div>
       {/* Get Design service in easy  */}

@@ -25,14 +25,20 @@ import FormDilog from "./FormDilog";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-
   const social = [
-   { icon:<Instagram size={40} className="text-rose-500"/>, link:"https://www.instagram.com/softmore_it/"},
-    {icon:<Facebook size={40} className="text-blue-500"/>, link:"https://www.facebook.com/SoftemoreIT"},
-    {icon:<Linkedin size={40} className="text-cyan-500"/>, link:"https://www.linkedin.com/company/softmore-it/"},
+    {
+      icon: <Instagram size={40} className="text-rose-500" />,
+      link: "https://www.instagram.com/softmore_it/",
+    },
+    {
+      icon: <Facebook size={40} className="text-blue-500" />,
+      link: "https://www.facebook.com/SoftemoreIT",
+    },
+    {
+      icon: <Linkedin size={40} className="text-cyan-500" />,
+      link: "https://www.linkedin.com/company/softmore-it/",
+    },
   ];
-
-
 
   return (
     <div className="w-full bg-gradient-to-r from-fuchsia-600 to-indigo-600  bg-opacity-25 border-b-2 h-[10vh] flex items-center justify-between px-2 md:px-8 lg:px-10 sticky top-0 z-30">
@@ -62,8 +68,6 @@ const Navbar = () => {
               </Link>
             </div>
 
-           
-
             <div className="mt-8">
               <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
                 <Link to="/" onClick={() => setIsOpen(false)}>
@@ -71,8 +75,7 @@ const Navbar = () => {
                 </Link>
               </div>
 
-
- <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
+              <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
                 <Link to="/about" onClick={() => setIsOpen(false)}>
                   Who We are
                 </Link>
@@ -128,7 +131,6 @@ const Navbar = () => {
                 </Accordion>
               </div>
 
-             
               <div className="font-bold bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent text-2xl mb-5 lg:text-4xl">
                 <Link to="/pricing" onClick={() => setIsOpen(false)}>
                   OUR PRICING
@@ -148,7 +150,11 @@ const Navbar = () => {
             <div className="flex mt-8 items-center gap-10 md:mt-16">
               {social?.map((item, index) => {
                 return (
-                  <motion.a href={item?.link} whileHover={{scale:1.2}}  key={index}>
+                  <motion.a
+                    href={item?.link}
+                    whileHover={{ scale: 1.2 }}
+                    key={index}
+                  >
                     {item?.icon}
                   </motion.a>
                 );
@@ -162,4 +168,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
