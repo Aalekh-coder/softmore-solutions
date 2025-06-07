@@ -85,6 +85,7 @@ const Footer = () => {
               <FooterLink to="/pricing" label="Our Pricing" />
               <FooterLink to="/contact" label="Contact Us" />
               <FooterLink to="/privacy-policy" label="Privacy Policy" />
+              <FooterLink to="/term-condition" label="Term-Condition" />
             </ul>
           </motion.div>
 
