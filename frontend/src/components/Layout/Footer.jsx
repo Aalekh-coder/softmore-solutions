@@ -156,7 +156,7 @@ const Footer = () => {
                   href="mailto:info@softmoreit.com"
                   className="text-white hover:text-primary-400 transition-colors"
                 >
-                  info@softmoreit.com
+                  info@softmoreit.co.in
                 </a>
               </li>
             </ul>
