@@ -21,7 +21,6 @@ const formSchema = new Schema({
     required: true,
     validate: {
       validator: function (v) {
-        // Indian: +91XXXXXXXXXX or 10 digits, USA: +1XXXXXXXXXX or (XXX) XXX-XXXX
         return /^(\+91\d{10}|\d{10}|\+1\d{10}|(\(\d{3}\)\s?\d{3}-\d{4}))$/.test(
           v
         );
