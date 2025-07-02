@@ -19,14 +19,6 @@ const formSchema = new Schema({
   phone: {
     type: String,
     required: true,
-    validate: {
-      validator: function (v) {
-        return /^(\+91\d{10}|\d{10}|\+1\d{10}|(\(\d{3}\)\s?\d{3}-\d{4}))$/.test(
-          v
-        );
-      },
-      message: (props) => `${props.value} is not a valid phone number!`,
-    },
   },
   service: {
     type: String,

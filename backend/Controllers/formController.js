@@ -29,7 +29,7 @@ export const createForm = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: error.message || "Error occurred while creating the form",
+      message: error.message,
     });
   }
 };
