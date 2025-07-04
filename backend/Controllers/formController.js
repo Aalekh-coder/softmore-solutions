@@ -109,3 +109,39 @@ export const changeStatusById = async (req, res) => {
     });
   }
 };
+
+export const addNoteToLead = async (req, res) => {
+  try {
+    const { id, note } = req.body;
+    if (!id && !note) {
+      return res.status(400).json({
+        success: false,
+        message: "Lead Id and note are required",
+      });
+    }
+
+    const updatedLead = await Form.findByIdAndUpdate(
+      id,
+      { $push: { notes: note } },
+      { new: true }
+    );
+
+    if (!updatedLead) {
+      return res.status(404).json({
+        success: false,
+        message: "Lead not found",
+      });
+    }
+    res.status(200).json({
+      success: true,
+      message: "note added successfully",
+      data: updatedLead,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({
+      success: false,
+      message: "Error while create the notes",
+    });
+  }
+};
