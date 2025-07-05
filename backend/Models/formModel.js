@@ -48,7 +48,7 @@ const formSchema = new Schema(
     },
     notes: [
       {
-        type: String,
+        note: { type: String, required: true },
         date: { type: Date, default: Date.now },
       },
     ],
