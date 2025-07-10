@@ -36,8 +36,13 @@ export const createForm = async (req, res) => {
 
 export const getAllFrom = async (req, res) => {
   try {
-    const from = await Form.find();
-    res.status(201).json(from);
+    const leadsList = await Form.find();
+  
+    res.status(201).json({
+      success: true,
+      message: "Leads fetched Successfully",
+      data: leadsList,
+    });
   } catch (error) {
     console.error(error);
     res.status(404).json({ error: "form not found" });
