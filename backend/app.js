@@ -4,6 +4,7 @@ import userRouter from "./Routes/formRoute.js"
 import { PORT } from "./Config/env.js";
 import cors from "cors"
 import connectDB from "./Config/db.js";
+import blogRouter from "./Routes/blogRoute.js";
 
 const app = express()
 
@@ -25,7 +26,8 @@ app.use(
     })
   );
 
-  app.use("/api",userRouter)
+  app.use("/api",userRouter);
+  app.use("/blog",blogRouter)
 
   app.get("/", (req, res) => {
     res.send("hello to the skechkingston")
